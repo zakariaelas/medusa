@@ -796,15 +796,91 @@ describe("CartService", () => {
     })
   })
 
-  describe("updateBillingAddress", () => {
+  describe("applyGiftCard", () => {
+    const gc = { is_disabled: false, region_id: "reg" }
     const cartRepository = MockRepository({
-      findOneWithRelations: () =>
-        Promise.resolve({
+      findOneWithRelations: (_, q) => {
+        return Promise.resolve({
+          gift_cards: [],
+          region_id: "reg",
           region: { countries: [{ iso_2: "us" }] },
-        }),
+        })
+      },
     })
 
-    const addressRepository = MockRepository({ create: c => c })
+    const giftCardService = {
+      retrieveByCode: c => {
+        if (c === "diffreg") {
+          return Promise.resolve({ region_id: "nogo" })
+        }
+        if (c === "fail") {
+          return Promise.resolve({ is_disabled: true })
+        }
+        return Promise.resolve(gc)
+      },
+    }
+
+    const cartService = new CartService({
+      manager: MockManager,
+      totalsService,
+      cartRepository,
+      giftCardService,
+      eventBusService,
+    })
+
+    beforeEach(() => {
+      jest.clearAllMocks()
+    })
+
+    it("successfully adds a gift card", async () => {
+      await cartService.update(IdMap.getId("emptyCart"), {
+        gift_cards: [{ code: "code" }],
+      })
+
+      expect(cartRepository.save).toHaveBeenCalledWith(
+        expect.objectContaining({
+          gift_cards: [gc],
+        })
+      )
+    })
+
+    it("fails to add disabled gift card", async () => {
+      await expect(
+        cartService.update(IdMap.getId("emptyCart"), {
+          gift_cards: [{ code: "fail" }],
+        })
+      ).rejects.toThrow("The gift card is disabled")
+    })
+
+    it("fails to add out of reg gift card", async () => {
+      await expect(
+        cartService.update(IdMap.getId("emptyCart"), {
+          gift_cards: [{ code: "diffreg" }],
+        })
+      ).rejects.toThrow("The gift card cannot be used in the current region")
+    })
+  })
+
+  describe("updateBillingAddress", () => {
+    const cartRepository = MockRepository({
+      findOneWithRelations: (_, q) => {
+        if (q.where.id === "with_addr") {
+          return Promise.resolve({
+            billing_address_id: "add_existing",
+            region: { countries: [{ iso_2: "us" }] },
+          })
+        }
+
+        return Promise.resolve({
+          region: { countries: [{ iso_2: "us" }] },
+        })
+      },
+    })
+
+    const addressRepository = MockRepository({
+      create: c => c,
+      findOne: () => Promise.resolve({}),
+    })
 
     const cartService = new CartService({
       manager: MockManager,
@@ -816,6 +892,24 @@ describe("CartService", () => {
 
     beforeEach(() => {
       jest.clearAllMocks()
+    })
+
+    it("successfully updates with existing billing address", async () => {
+      await cartService.update("with_addr", {
+        billing_address: {
+          country_code: "us",
+          address_1: "Good St",
+        },
+      })
+
+      expect(addressRepository.findOne).toHaveBeenCalledTimes(1)
+      expect(addressRepository.findOne).toHaveBeenCalledWith({
+        where: { id: "add_existing" },
+      })
+
+      expect(addressRepository.save).toHaveBeenCalledTimes(1)
+
+      expect(cartRepository.save).toHaveBeenCalledTimes(1)
     })
 
     it("successfully updates billing address", async () => {
@@ -860,12 +954,23 @@ describe("CartService", () => {
 
   describe("updateShippingAddress", () => {
     const cartRepository = MockRepository({
-      findOneWithRelations: () =>
-        Promise.resolve({
+      findOneWithRelations: (_, q) => {
+        if (q.where.id === "with_addr") {
+          return Promise.resolve({
+            shipping_address_id: "add_existing",
+            region: { countries: [{ iso_2: "us" }] },
+          })
+        }
+
+        return Promise.resolve({
           region: { countries: [{ iso_2: "us" }] },
-        }),
+        })
+      },
     })
-    const addressRepository = MockRepository({ create: c => c })
+    const addressRepository = MockRepository({
+      create: c => c,
+      findOne: () => Promise.resolve({}),
+    })
 
     const cartService = new CartService({
       manager: MockManager,
@@ -915,6 +1020,24 @@ describe("CartService", () => {
         total: 0,
         shipping_address: address,
       })
+    })
+
+    it("successfully updates with existing shipping address", async () => {
+      await cartService.update("with_addr", {
+        shipping_address: {
+          country_code: "us",
+          address_1: "Good St",
+        },
+      })
+
+      expect(addressRepository.findOne).toHaveBeenCalledTimes(1)
+      expect(addressRepository.findOne).toHaveBeenCalledWith({
+        where: { id: "add_existing" },
+      })
+
+      expect(addressRepository.save).toHaveBeenCalledTimes(1)
+
+      expect(cartRepository.save).toHaveBeenCalledTimes(1)
     })
 
     it("throws if country not in region", async () => {

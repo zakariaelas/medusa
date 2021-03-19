@@ -788,11 +788,6 @@ class CartService extends BaseService {
       )
     }
 
-    // if discount is already there, we simply resolve
-    if (cart.gift_cards.find(({ id }) => id === giftCard.id)) {
-      return Promise.resolve()
-    }
-
     cart.gift_cards = [...cart.gift_cards, giftCard]
   }
 

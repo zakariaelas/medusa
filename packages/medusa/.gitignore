@@ -1,6 +1,10 @@
 /dist
 node_modules
-.DS_store
+coverage
+*.DS_store
 .env*
 .env
+.nyc_output
+uploads
 
+yarn-error.log

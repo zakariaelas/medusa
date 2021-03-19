@@ -1,5 +1,5 @@
 import { MockManager } from "medusa-test-utils"
-import { createContainer, asValue } from "awilix"
+import { createContainer, asValue, asFunction } from "awilix"
 import express from "express"
 import cookieParser from "cookie-parser"
 import supertest from "supertest"
@@ -54,6 +54,12 @@ testApp.use((req, res, next) => {
 })
 
 apiLoader({ container, rootDirectory: ".", app: testApp })
+
+export function registerService(name, service) {
+  container.register({
+    [name]: asFunction(() => service),
+  })
+}
 
 const supertestRequest = supertest(testApp)
 

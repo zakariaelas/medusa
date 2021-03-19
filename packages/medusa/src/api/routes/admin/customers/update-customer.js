@@ -39,7 +39,6 @@ export default async (req, res) => {
   const schema = Validator.object().keys({
     first_name: Validator.string().optional(),
     last_name: Validator.string().optional(),
-    password: Validator.string().optional(),
     phone: Validator.string().optional(),
   })
 
@@ -48,15 +47,11 @@ export default async (req, res) => {
     throw new MedusaError(MedusaError.Types.INVALID_DATA, error.details)
   }
 
-  try {
-    const customerService = req.scope.resolve("customerService")
-    await customerService.update(id, value)
+  const customerService = req.scope.resolve("customerService")
+  await customerService.update(id, value)
 
-    const customer = await customerService.retrieve(id, {
-      relations: ["orders"],
-    })
-    res.status(200).json({ customer })
-  } catch (err) {
-    throw err
-  }
+  const customer = await customerService.retrieve(id, {
+    relations: ["orders"],
+  })
+  res.status(200).json({ customer })
 }

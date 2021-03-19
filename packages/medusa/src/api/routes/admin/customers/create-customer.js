@@ -29,7 +29,6 @@ export default async (req, res) => {
       .required(),
     first_name: Validator.string().required(),
     last_name: Validator.string().required(),
-    password: Validator.string().required(),
     phone: Validator.string().optional(),
   })
 
@@ -37,11 +36,8 @@ export default async (req, res) => {
   if (error) {
     throw new MedusaError(MedusaError.Types.INVALID_DATA, error.details)
   }
-  try {
-    const customerService = req.scope.resolve("customerService")
-    const customer = await customerService.create(value)
-    res.status(201).json({ customer })
-  } catch (err) {
-    throw err
-  }
+
+  const customerService = req.scope.resolve("customerService")
+  const customer = await customerService.create(value)
+  res.status(201).json({ customer })
 }

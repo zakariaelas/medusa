@@ -1,6 +1,6 @@
 import _ from "lodash"
 import jwt from "jsonwebtoken"
-import { Validator } from "medusa-core-utils"
+import { Validator, MedusaError } from "medusa-core-utils"
 import config from "../../../../config"
 
 /**
@@ -32,7 +32,7 @@ export default async (req, res) => {
   const { value, error } = schema.validate(body)
 
   if (error) {
-    throw error
+    throw new MedusaError(MedusaError.Types.INVALID_DATA, error.details)
   }
 
   const authService = req.scope.resolve("authService")
