@@ -5,7 +5,7 @@ import { PaymentService } from "medusa-interfaces"
 class PayPalProviderService extends PaymentService {
   static identifier = "paypal"
 
-  constructor({ totalsService, regionService }, options) {
+  constructor({ totalsService, regionService, logger }, options) {
     super()
 
     /**
@@ -18,6 +18,7 @@ class PayPalProviderService extends PaymentService {
      *  }
      */
     this.options_ = options
+    this.logger_ = logger
 
     let environment
     if (this.options_.sandbox) {
@@ -123,6 +124,7 @@ class PayPalProviderService extends PaymentService {
       const res = await this.paypal_.execute(request)
       return res.result
     } catch (error) {
+      this.logger_.error(error)
       throw error
     }
   }
@@ -136,6 +138,7 @@ class PayPalProviderService extends PaymentService {
     try {
       return this.retrievePayment(session.data)
     } catch (error) {
+      this.logger_.error(error)
       throw error
     }
   }
@@ -153,6 +156,7 @@ class PayPalProviderService extends PaymentService {
     try {
       return { data: session.data, status: stat }
     } catch (error) {
+      this.logger_.error(error)
       throw error
     }
   }
@@ -170,6 +174,7 @@ class PayPalProviderService extends PaymentService {
         ...update.data,
       }
     } catch (error) {
+      this.logger_.error(error)
       throw error
     }
   }
@@ -203,6 +208,7 @@ class PayPalProviderService extends PaymentService {
 
       return sessionData
     } catch (error) {
+      this.logger_.error(error)
       return this.createPayment(cart)
     }
   }
@@ -229,6 +235,7 @@ class PayPalProviderService extends PaymentService {
       await this.paypal_.execute(request)
       return this.retrievePayment(payment.data)
     } catch (error) {
+      this.logger_.error(error)
       throw error
     }
   }
@@ -262,6 +269,7 @@ class PayPalProviderService extends PaymentService {
 
       return this.retrievePayment(payment.data)
     } catch (error) {
+      this.logger_.error(error)
       throw error
     }
   }
@@ -288,6 +296,7 @@ class PayPalProviderService extends PaymentService {
 
       return this.retrievePayment(payment.data)
     } catch (error) {
+      this.logger_.error(error)
       throw error
     }
   }
