@@ -321,18 +321,22 @@ class ContentfulService extends BaseService {
         [this.getCustomField("medusaId", "region")]: {
           "en-US": r.id,
         },
-        [this.getCustomField("name", "region")]: {
-          "en-US": r.name,
-        },
-        [this.getCustomField("countries", "region")]: {
-          "en-US": r.countries,
-        },
-        [this.getCustomField("paymentProviders", "region")]: {
-          "en-US": r.payment_providers,
-        },
-        [this.getCustomField("fulfillmentProviders", "region")]: {
-          "en-US": r.fulfillment_providers,
-        },
+      }
+
+      const updateMap = {
+        name: "name",
+        countries: "countries",
+        currencyCode: "currency_code",
+        paymentProviders: "payment_providers",
+        fulfillmentProviders: "fulfillment_providers",
+      }
+
+      for (const [contentfulKey, regionKey] of Object.entries(updateMap)) {
+        if (this.shouldPopulateField(contentfulKey, "region", regionType)) {
+          fields[this.getCustomField(contentfulKey, "region")] = {
+            "en-US": r[regionKey],
+          }
+        }
       }
 
       const result = await environment.createEntryWithId("region", r.id, {
@@ -346,10 +350,8 @@ class ContentfulService extends BaseService {
   }
 
   async updateRegionInContentful(data) {
-    const hasType = await this.getType("region")
-      .then(() => true)
-      .catch(() => false)
-    if (!hasType) {
+    const regionType = await this.getType("region").catch(() => false)
+    if (!regionType) {
       return Promise.resolve()
     }
 
@@ -388,18 +390,22 @@ class ContentfulService extends BaseService {
 
       const regionEntryFields = {
         ...regionEntry.fields,
-        [this.getCustomField("name", "region")]: {
-          "en-US": r.name,
-        },
-        [this.getCustomField("countries", "region")]: {
-          "en-US": r.countries,
-        },
-        [this.getCustomField("paymentProviders", "region")]: {
-          "en-US": r.payment_providers,
-        },
-        [this.getCustomField("fulfillmentProviders", "region")]: {
-          "en-US": r.fulfillment_providers,
-        },
+      }
+
+      const updateMap = {
+        name: "name",
+        countries: "countries",
+        currencyCode: "currency_code",
+        paymentProviders: "payment_providers",
+        fulfillmentProviders: "fulfillment_providers",
+      }
+
+      for (const [contentfulKey, regionKey] of Object.entries(updateMap)) {
+        if (this.shouldPopulateField(contentfulKey, "region", regionType)) {
+          regionEntryFields[this.getCustomField(contentfulKey, "region")] = {
+            "en-US": r[regionKey],
+          }
+        }
       }
 
       regionEntry.fields = regionEntryFields
@@ -732,6 +738,11 @@ class ContentfulService extends BaseService {
     } catch (error) {
       throw error
     }
+  }
+
+  async shouldPopulateField(fieldName, typeId, contentType) {
+    const resolvedField = this.getCustomField(fieldName, typeId)
+    return contentType.fields.find((f) => f.id === resolvedField)
   }
 
   async getType(type) {
