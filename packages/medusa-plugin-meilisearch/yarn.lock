@@ -3777,7 +3777,7 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-medusa-core-utils@^1.1.22:
+medusa-core-utils@^1.1.20, medusa-core-utils@^1.1.22:
   version "1.1.22"
   resolved "https://registry.yarnpkg.com/medusa-core-utils/-/medusa-core-utils-1.1.22.tgz#84ce0af0a7c672191d758ea462056e30a39d08b1"
   integrity sha512-kMuRkWOuNG4Bw6epg/AYu95UJuE+rjHTeTWRLbEPrYGjWREV82tLWVDI21/QcccmaHmMU98Rkw2z9JwyFZIiyw==
