@@ -53,10 +53,10 @@ class SearchService extends BaseService {
   /**
    * Used to delete document
    * @param indexName {string} - the index name
-   * @param document_id {string} - the id of the document
+   * @param documentId {string} - the id of the document
    * @return {Promise<{object}>} - returns response from search engine provider
    */
-  deleteDocument(indexName, document_id) {
+  deleteDocument(indexName, documentId) {
     throw Error("deleteDocument must be overridden by a child class")
   }
 
