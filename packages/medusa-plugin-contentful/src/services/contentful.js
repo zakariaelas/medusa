@@ -663,6 +663,9 @@ class ContentfulService extends BaseService {
       const title =
         productEntry.fields[this.getCustomField("title", "product")]["en-US"]
 
+      const handle =
+        productEntry.fields[this.getCustomField("handle", "product")]["en-US"]
+
       const subtitle =
         productEntry.fields[this.getCustomField("subtitle", "product")]["en-US"]
 
@@ -681,6 +684,10 @@ class ContentfulService extends BaseService {
 
       if (product.description !== description) {
         update.description = description
+      }
+
+      if (product.handle !== handle) {
+        update.handle = handle
       }
 
       // Get the thumbnail, if present
@@ -753,7 +760,6 @@ class ContentfulService extends BaseService {
       output.push(transformed)
     }
 
-    console.log(output)
     if (!isArray) {
       return output[0]
     }
