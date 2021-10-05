@@ -690,7 +690,12 @@ class ContentfulService extends BaseService {
         )
 
         if (thumb.fields.file["en-US"].url) {
-          if (!product.thumbnail.includes(thumb.fields.file["en-US"].url)) {
+          if (
+            !(
+              product.thumbnail &&
+              product.thumbnail.includes(thumb.fields.file["en-US"].url)
+            )
+          ) {
             update.thumbnail = thumb.fields.file["en-US"].url
           }
         }
