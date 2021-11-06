@@ -3,7 +3,7 @@ import {
   EntityRepository,
   FindManyOptions,
   OrderByCondition,
-  Repository
+  Repository,
 } from "typeorm"
 import { ProductCollection } from "../models/product-collection"
 import prefix from "../utils/prefix-object-key"
