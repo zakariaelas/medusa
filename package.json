@@ -69,7 +69,7 @@
     "test:fixtures": "jest --config=docs-util/jest.config.js --runInBand",
     "generate:services": "typedoc --options typedoc.services.js",
     "changeset": "changeset",
-    "prerelease": "yarn run build && yarn run test",
+    "prerelease": "yarn run build && yarn run test && node ./scripts/change-pkgs-name.js",
     "release": "changeset publish"
   },
   "dependencies": {
