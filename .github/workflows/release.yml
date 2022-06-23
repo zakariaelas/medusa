@@ -11,10 +11,11 @@ jobs:
         with:
           # This makes action fetch all Git history so that Changesets can generate changelogs with the correct commits
           fetch-depth: 0
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
         with:
-          version: 14.x
+          version: 16.x
+          cache: yarn
       - name: Install Dependencies
         run: yarn
         env:
