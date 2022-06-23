@@ -38,7 +38,9 @@ for (const pkg of pkgs) {
   const pkgPackageJson = JSON.parse(fs.readFileSync(packageJsonLocation))
   pkgPackageJson.name = transformPkgName(pkgPackageJson.name)
   pkgPackageJson.author = "Zakaria S. El Asri"
-  pkgPackageJson.repository.url = "https://github.com/zakariaelas/medusa.git"
+  if (pkgPackageJson.repository) {
+    pkgPackageJson.repository.url = "https://github.com/zakariaelas/medusa.git"
+  }
   if (pkgPackageJson.dependencies) {
     pkgPackageJson.dependencies = transformDepsNames(
       pkgPackageJson.dependencies
