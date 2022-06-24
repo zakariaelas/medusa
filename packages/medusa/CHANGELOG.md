@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.3.4
+
+### Patch Changes
+
+- [#7](https://github.com/zakariaelas/medusa/pull/7) [`2d01abf0`](https://github.com/zakariaelas/medusa/commit/2d01abf0c4fafef5ee883bf1020054c666d4b338) Thanks [@zakariaelas](https://github.com/zakariaelas)! - Add customer relation to default cart relations when retrieving a draft order
+
 ## 1.3.3
 
 ### Patch Changes
