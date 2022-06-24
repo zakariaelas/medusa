@@ -66,6 +66,7 @@ export const defaultAdminDraftOrdersCartRelations = [
   "shipping_methods.shipping_option",
   "discounts",
   "discounts.rule",
+  "customer",
 ]
 
 export const defaultAdminDraftOrdersCartFields: (keyof Cart)[] = [
