@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.3.5
+
+### Patch Changes
+
+- [#6](https://github.com/zakariaelas/medusa/pull/6) [`43adc119`](https://github.com/zakariaelas/medusa/commit/43adc1198c2eff0d5ce5411ff3e3a1628cf71537) Thanks [@zakariaelas](https://github.com/zakariaelas)! - - add streaming methods to minio
+  - fix async methods in s3 and file-spaces
+
 ## 1.3.4
 
 ### Patch Changes
