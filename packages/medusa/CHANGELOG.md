@@ -1,5 +1,14 @@
 # Change Log
 
+## 0.0.0-develop-20220626225722
+
+### Patch Changes
+
+- [#14](https://github.com/zakariaelas/medusa/pull/14) [`b9435fa8`](https://github.com/zakariaelas/medusa/commit/b9435fa867a0ec763e0c31f146fdc81ef66af2f5) Thanks [@zakariaelas](https://github.com/zakariaelas)! - Add customer relation to default cart relations when retrieving a draft order
+
+* [#13](https://github.com/zakariaelas/medusa/pull/13) [`2a015660`](https://github.com/zakariaelas/medusa/commit/2a0156600993878b97cf2529f21d7a80d52d5409) Thanks [@zakariaelas](https://github.com/zakariaelas)! - - add streaming methods to minio
+  - fix async methods in s3 and file-spaces
+
 ## 1.3.3
 
 ### Patch Changes

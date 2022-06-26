@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.0.0-develop-20220626225722
+
+### Patch Changes
+
+- [#13](https://github.com/zakariaelas/medusa/pull/13) [`2a015660`](https://github.com/zakariaelas/medusa/commit/2a0156600993878b97cf2529f21d7a80d52d5409) Thanks [@zakariaelas](https://github.com/zakariaelas)! - - add streaming methods to minio
+  - fix async methods in s3 and file-spaces
+
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
@@ -7,49 +14,25 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package medusa-file-s3
 
-
-
-
-
 ## [1.1.1](https://github.com/medusajs/medusa/compare/medusa-file-s3@1.1.0...medusa-file-s3@1.1.1) (2022-05-31)
 
 **Note:** Version bump only for package medusa-file-s3
-
-
-
-
 
 # [1.1.0](https://github.com/medusajs/medusa/compare/medusa-file-s3@1.0.12...medusa-file-s3@1.1.0) (2022-05-01)
 
 **Note:** Version bump only for package medusa-file-s3
 
-
-
-
-
 ## [1.0.12](https://github.com/medusajs/medusa/compare/medusa-file-s3@1.0.11...medusa-file-s3@1.0.12) (2022-01-11)
 
 **Note:** Version bump only for package medusa-file-s3
-
-
-
-
 
 ## [1.0.11](https://github.com/medusajs/medusa/compare/medusa-file-s3@1.0.10...medusa-file-s3@1.0.11) (2021-12-29)
 
 **Note:** Version bump only for package medusa-file-s3
 
-
-
-
-
 ## [1.0.10](https://github.com/medusajs/medusa/compare/medusa-file-s3@1.0.9...medusa-file-s3@1.0.10) (2021-12-17)
 
 **Note:** Version bump only for package medusa-file-s3
-
-
-
-
 
 ## [1.0.9](https://github.com/medusajs/medusa/compare/medusa-file-s3@1.0.8...medusa-file-s3@1.0.9) (2021-12-08)
 
