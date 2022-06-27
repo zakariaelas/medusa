@@ -71,7 +71,7 @@
     "changeset": "changeset",
     "prerelease": "yarn run build && yarn run test && node ./scripts/change-pkgs-name.js",
     "release": "changeset publish",
-    "release:snapshot": "changeset publish --no-git-tags --snapshot --tag snapshot"
+    "release:snapshot": "node ./scripts/change-pkgs-name && changeset publish --no-git-tags --snapshot --tag snapshot"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.4.5",
