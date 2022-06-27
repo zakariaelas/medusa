@@ -2,7 +2,7 @@ const path = require(`path`)
 const fs = require("fs")
 const rootPackageJson = require("../package.json")
 
-const newPkgName = "dusame"
+const newPkgName = "test-dusame"
 
 const pkgs = fs.readdirSync(path.join(__dirname, "../", "packages"))
 
