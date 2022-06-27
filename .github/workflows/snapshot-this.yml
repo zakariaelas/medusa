@@ -15,9 +15,12 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   snapshot:
     name: Snapshot Release
-    if: github.event.issue.pull_request && github.event.comment.body == '/snapshot-this'
+    if: github.event.workflow_run.conclusion == 'success' && github.event.issue.pull_request && github.event.comment.body == '/snapshot-this'
     runs-on: ubuntu-latest
     steps:
+      - name: Debug workflow run
+        run: echo "${{ github.event.workflow_run.conclusion }}"
+
       - name: Validate pull request
         uses: actions/github-script@v6
         with:
