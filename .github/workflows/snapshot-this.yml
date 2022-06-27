@@ -1,6 +1,11 @@
 name: Snapshot This
 
 on:
+  workflow_run:
+    workflows: [Medusa Pipeline]
+    types:
+      - completed
+
   issue_comment:
     types:
       - created
@@ -10,7 +15,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   snapshot:
     name: Snapshot Release
-    if: github.event.issue.pull_request && github.event.comment.body == '/snapshot-this'
+    if: ${{ github.event.workflow_run.conclusion == 'success' }} && github.event.issue.pull_request && github.event.comment.body == '/snapshot-this'
     runs-on: ubuntu-latest
     steps:
       - name: Validate pull request
