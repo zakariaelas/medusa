@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/zakariaelas/medusa/compare/gatsby-source-dusame@0.1.0...gatsby-source-dusame@0.1.1) (2022-06-27)
+
+**Note:** Version bump only for package gatsby-source-dusame
+
+
+
+
+
 # [0.1.0](https://github.com/medusajs/medusa/compare/gatsby-source-medusa@0.0.49...gatsby-source-medusa@0.1.0) (2022-05-01)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/zakariaelas/medusa/compare/dusame-file-spaces@1.2.2...dusame-file-spaces@1.2.3) (2022-06-27)
+
+**Note:** Version bump only for package dusame-file-spaces
+
+
+
+
+
 ## [1.2.2](https://github.com/medusajs/medusa/compare/medusa-file-spaces@1.2.0...medusa-file-spaces@1.2.2) (2022-06-19)
 
 

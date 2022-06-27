@@ -1,13 +1,15 @@
 # Change Log
 
-## 1.3.3
-
-### Patch Changes
-
-- [#4](https://github.com/zakariaelas/medusa/pull/4) [`fdb6e9a8`](https://github.com/zakariaelas/medusa/commit/fdb6e9a8fcb1194b18e6848971531bedb1089b16) Thanks [@zakariaelas](https://github.com/zakariaelas)! - Solved bug when fulfillment items are blabla
-
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [1.3.4](https://github.com/zakariaelas/medusa/compare/@zakariaelas/dusame@0.0.0-snapshot-20220627123920...@zakariaelas/dusame@1.3.4) (2022-06-27)
+
+**Note:** Version bump only for package @zakariaelas/dusame
+
+
+
+
 
 ## [1.3.2](https://github.com/medusajs/medusa/compare/@medusajs/medusa@1.3.0...@medusajs/medusa@1.3.2) (2022-06-19)
 

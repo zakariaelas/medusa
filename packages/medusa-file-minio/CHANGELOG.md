@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.7](https://github.com/zakariaelas/medusa/compare/dusame-file-minio@1.0.6...dusame-file-minio@1.0.7) (2022-06-27)
+
+**Note:** Version bump only for package dusame-file-minio
+
+
+
+
+
 ## [1.0.6](https://github.com/medusajs/medusa/compare/medusa-file-minio@1.0.4...medusa-file-minio@1.0.6) (2022-06-19)
 
 **Note:** Version bump only for package medusa-file-minio
