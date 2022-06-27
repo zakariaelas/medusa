@@ -3,6 +3,76 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.38 (2022-06-27)
+
+
+### Bug Fixes
+
+* merge develop ([2982a8e](https://github.com/zakariaelas/medusa/commit/2982a8e682e90beb4549d969d9d3b04d78a46a2d))
+* merge develop ([a468c45](https://github.com/zakariaelas/medusa/commit/a468c451e82c68f41b5005a2e480057f6124aaa6))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+
+
+
+## 1.0.10 (2020-09-09)
+
+
+### Bug Fixes
+
+* updates license ([db519fb](https://github.com/zakariaelas/medusa/commit/db519fbaa6f8ad02c19cbecba5d4f28ba1ee81aa))
+
+
+
+## 1.0.7 (2020-09-07)
+
+
+
+## 1.0.1 (2020-09-05)
+
+
+
+## 1.0.1-beta.0 (2020-09-04)
+
+
+
+# 1.0.0 (2020-09-03)
+
+
+
+# 1.0.0-alpha.30 (2020-08-28)
+
+
+
+# 1.0.0-alpha.27 (2020-08-27)
+
+
+
+# 1.0.0-alpha.26 (2020-08-27)
+
+
+
+# 1.0.0-alpha.24 (2020-08-27)
+
+
+
+# 1.0.0-alpha.3 (2020-08-20)
+
+
+
+# 1.0.0-alpha.2 (2020-08-20)
+
+
+
+# 1.0.0-alpha.1 (2020-08-20)
+
+
+
+# 1.0.0-alpha.0 (2020-08-20)
+
+
+
+
+
 ## [1.1.37](https://github.com/medusajs/medusa/compare/medusa-plugin-economic@1.1.36...medusa-plugin-economic@1.1.37) (2022-01-11)
 
 **Note:** Version bump only for package medusa-plugin-economic

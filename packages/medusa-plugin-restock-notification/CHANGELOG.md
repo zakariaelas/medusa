@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.33 (2022-06-27)
+
+
+### Bug Fixes
+
+* .gitignore ([684c20a](https://github.com/zakariaelas/medusa/commit/684c20ab293237f91fc160a269fd072c5de7012b))
+* add delay before triggering email ([#458](https://github.com/zakariaelas/medusa/issues/458)) ([ee2f7c6](https://github.com/zakariaelas/medusa/commit/ee2f7c6333a0e8a4fa1454c514662bb83ce16346))
+* adds tests ([69442a1](https://github.com/zakariaelas/medusa/commit/69442a1735193aeb010043f114d89037d4d76279))
+* cors ([15bbb71](https://github.com/zakariaelas/medusa/commit/15bbb71a46efe00af3bd46bc16dfd48439204587))
+* cors ([e4a30e8](https://github.com/zakariaelas/medusa/commit/e4a30e8afc84eb201b0ddcb027bbe5674d0aff8f))
+* cors ([967134e](https://github.com/zakariaelas/medusa/commit/967134e797a867fd84064d3764815961a976015b))
+* creates restock functionality ([2b25550](https://github.com/zakariaelas/medusa/commit/2b2555004e52e97c15bfca59e030fdfc3d86ae49))
+* deps ([a9ea38c](https://github.com/zakariaelas/medusa/commit/a9ea38c2005beb63e14ed151e25ecd26819c748c))
+* ensures that delayed restock notifications are being sent ([#881](https://github.com/zakariaelas/medusa/issues/881)) ([329767e](https://github.com/zakariaelas/medusa/commit/329767e27980253d456030dd5aad648662d39e3d))
+* gitignore ([fa1fe9d](https://github.com/zakariaelas/medusa/commit/fa1fe9d619e19a277db6ee3a25ebb177222fa04b))
+* merge ([7897610](https://github.com/zakariaelas/medusa/commit/78976106209b35730d69817b52595b6008590159))
+* peerdependencies ([40725c6](https://github.com/zakariaelas/medusa/commit/40725c6d0a643369a710cfc7cbf5b5f65a4f1f93))
+* release ([fc3fbc8](https://github.com/zakariaelas/medusa/commit/fc3fbc897fad5c8a5d3eea828ac7277fba9d70af))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+* restock ([237ed51](https://github.com/zakariaelas/medusa/commit/237ed5130760645c6b892fa1d5fc09a713b95f58))
+* **segment:** swap tracking ([295f0f6](https://github.com/zakariaelas/medusa/commit/295f0f652a0880292a3788b9c65476a3c5c1b8d4))
+* working api ([9d81097](https://github.com/zakariaelas/medusa/commit/9d810971a7e0de2a586b5c9c372f0aad2818918b))
+
+
+### Features
+
+* add medusa-react ([#913](https://github.com/zakariaelas/medusa/issues/913)) ([d0d8dd7](https://github.com/zakariaelas/medusa/commit/d0d8dd7bf62eaac71df8714c2dfb4f204d192f51))
+* medusa-react admin hooks ([#978](https://github.com/zakariaelas/medusa/issues/978)) ([2e38484](https://github.com/zakariaelas/medusa/commit/2e384842d5b2e9742a86b96f28a8f00357795b86)), closes [#1019](https://github.com/zakariaelas/medusa/issues/1019)
+* restock service ([8bd5fa8](https://github.com/zakariaelas/medusa/commit/8bd5fa821286a90f3ab21e8c96993ac543fb7cab))
+
+
+
+
+
 ## [0.0.32](https://github.com/medusajs/medusa/compare/medusa-plugin-restock-notification@0.0.31...medusa-plugin-restock-notification@0.0.32) (2022-02-06)
 
 ### Bug Fixes

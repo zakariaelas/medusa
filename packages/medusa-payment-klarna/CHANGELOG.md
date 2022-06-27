@@ -3,6 +3,133 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.1 (2022-06-27)
+
+
+### Bug Fixes
+
+* release ([fc3fbc8](https://github.com/zakariaelas/medusa/commit/fc3fbc897fad5c8a5d3eea828ac7277fba9d70af))
+* **medusa-payment-klarna:** Default shipping fee name in Klarna plugin ([#926](https://github.com/zakariaelas/medusa/issues/926)) ([8782016](https://github.com/zakariaelas/medusa/commit/8782016095e82a21ac3e623f7d6fa0413d86ae1e))
+* address fix ([dbf9ba7](https://github.com/zakariaelas/medusa/commit/dbf9ba7b632570e5fc8efde522837fa44bbf5427))
+* expired klarna orders ([5ef13d4](https://github.com/zakariaelas/medusa/commit/5ef13d49c0a2f6d82c5c2342ad800749e41d46fb))
+* klarna doesn't treat negative discounts well ([e275184](https://github.com/zakariaelas/medusa/commit/e27518435ea1fafe556168c36475916a4243eabe))
+* merge develop ([2982a8e](https://github.com/zakariaelas/medusa/commit/2982a8e682e90beb4549d969d9d3b04d78a46a2d))
+* merge develop ([a468c45](https://github.com/zakariaelas/medusa/commit/a468c451e82c68f41b5005a2e480057f6124aaa6))
+* publish assist ([7719957](https://github.com/zakariaelas/medusa/commit/7719957b44a0c0d950eff948faf31188fe0e3ef1))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+
+
+### Features
+
+* medusa-react admin hooks ([#978](https://github.com/zakariaelas/medusa/issues/978)) ([2e38484](https://github.com/zakariaelas/medusa/commit/2e384842d5b2e9742a86b96f28a8f00357795b86)), closes [#1019](https://github.com/zakariaelas/medusa/issues/1019)
+* new tax api ([#979](https://github.com/zakariaelas/medusa/issues/979)) ([47588e7](https://github.com/zakariaelas/medusa/commit/47588e7a8d3b2ae2fed0c1e87fdf1ee2db6bcdc2)), closes [#885](https://github.com/zakariaelas/medusa/issues/885) [#896](https://github.com/zakariaelas/medusa/issues/896) [#911](https://github.com/zakariaelas/medusa/issues/911) [#945](https://github.com/zakariaelas/medusa/issues/945) [#950](https://github.com/zakariaelas/medusa/issues/950) [#951](https://github.com/zakariaelas/medusa/issues/951) [#954](https://github.com/zakariaelas/medusa/issues/954) [#969](https://github.com/zakariaelas/medusa/issues/969) [#998](https://github.com/zakariaelas/medusa/issues/998) [#1017](https://github.com/zakariaelas/medusa/issues/1017) [#1110](https://github.com/zakariaelas/medusa/issues/1110)
+
+
+
+## 1.0.10 (2020-09-09)
+
+
+### Bug Fixes
+
+* updates license ([db519fb](https://github.com/zakariaelas/medusa/commit/db519fbaa6f8ad02c19cbecba5d4f28ba1ee81aa))
+
+
+
+## 1.0.7 (2020-09-07)
+
+
+
+## 1.0.1 (2020-09-05)
+
+
+
+## 1.0.1-beta.0 (2020-09-04)
+
+
+
+# 1.0.0 (2020-09-03)
+
+
+
+# 1.0.0-y.6 (2020-08-31)
+
+
+### Bug Fixes
+
+* parse response correctly ([9adc52d](https://github.com/zakariaelas/medusa/commit/9adc52d0c59c4bc2fd9c3c9d3418c9c7d57c63b0))
+
+
+
+# 1.0.0-y.5 (2020-08-31)
+
+
+### Bug Fixes
+
+* use correct path for captures ([91befc0](https://github.com/zakariaelas/medusa/commit/91befc03cd63829e57fd853b2b34f92e9d43e4e3))
+
+
+
+# 1.0.0-y.3 (2020-08-31)
+
+
+### Bug Fixes
+
+* auto pick country in 1 country regions ([d11eb8f](https://github.com/zakariaelas/medusa/commit/d11eb8fa65e0d036f88890ed7fd771a607f75cbc))
+
+
+
+# 1.0.0-y.2 (2020-08-31)
+
+
+### Bug Fixes
+
+* **medusa-payment-klarna:** get correct country ([daa425d](https://github.com/zakariaelas/medusa/commit/daa425de16297e4315a85c1f844eab7a249dc6de))
+
+
+
+# 1.0.0-y.1 (2020-08-31)
+
+
+### Bug Fixes
+
+* add backend url as option ([84f600c](https://github.com/zakariaelas/medusa/commit/84f600c1bc9888805e3588785c8fac1faa509207))
+
+
+
+# 1.0.0-alpha.30 (2020-08-28)
+
+
+
+# 1.0.0-alpha.27 (2020-08-27)
+
+
+
+# 1.0.0-alpha.26 (2020-08-27)
+
+
+
+# 1.0.0-alpha.24 (2020-08-27)
+
+
+
+# 1.0.0-alpha.3 (2020-08-20)
+
+
+
+# 1.0.0-alpha.2 (2020-08-20)
+
+
+
+# 1.0.0-alpha.1 (2020-08-20)
+
+
+
+# 1.0.0-alpha.0 (2020-08-20)
+
+
+
+
+
 # [1.3.0](https://github.com/medusajs/medusa/compare/medusa-payment-klarna@1.2.1...medusa-payment-klarna@1.3.0) (2022-05-01)
 
 **Note:** Version bump only for package medusa-payment-klarna

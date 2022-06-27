@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.3 (2022-06-27)
+
+
+### Bug Fixes
+
+* gitignore ([fa1fe9d](https://github.com/zakariaelas/medusa/commit/fa1fe9d619e19a277db6ee3a25ebb177222fa04b))
+* merge develop ([2982a8e](https://github.com/zakariaelas/medusa/commit/2982a8e682e90beb4549d969d9d3b04d78a46a2d))
+* merge develop ([a468c45](https://github.com/zakariaelas/medusa/commit/a468c451e82c68f41b5005a2e480057f6124aaa6))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+* **medusa-fulfillment-webshipper:** adds return customs_lines ([#130](https://github.com/zakariaelas/medusa/issues/130)) ([3b1f142](https://github.com/zakariaelas/medusa/commit/3b1f1422757f374efa8f3af99046753473d3f745))
+
+
+### Features
+
+* Add DiscountConditions ([#1230](https://github.com/zakariaelas/medusa/issues/1230)) ([a610805](https://github.com/zakariaelas/medusa/commit/a610805917ee930d4cebde74905e541a468aa83b)), closes [#1146](https://github.com/zakariaelas/medusa/issues/1146) [#1149](https://github.com/zakariaelas/medusa/issues/1149) [#1156](https://github.com/zakariaelas/medusa/issues/1156) [#1170](https://github.com/zakariaelas/medusa/issues/1170) [#1172](https://github.com/zakariaelas/medusa/issues/1172) [#1212](https://github.com/zakariaelas/medusa/issues/1212) [#1224](https://github.com/zakariaelas/medusa/issues/1224) [#1228](https://github.com/zakariaelas/medusa/issues/1228)
+* adds support for certificate of origin ([f21dae8](https://github.com/zakariaelas/medusa/commit/f21dae827ad64522fd1f4d6317740c6b0ded0536))
+* allow product selection on discounts allocated to a specific item ([#395](https://github.com/zakariaelas/medusa/issues/395)) ([84d4d79](https://github.com/zakariaelas/medusa/commit/84d4d791eaf9508367a20d9f930ca959a7b707dd))
+* new tax api ([#979](https://github.com/zakariaelas/medusa/issues/979)) ([47588e7](https://github.com/zakariaelas/medusa/commit/47588e7a8d3b2ae2fed0c1e87fdf1ee2db6bcdc2)), closes [#885](https://github.com/zakariaelas/medusa/issues/885) [#896](https://github.com/zakariaelas/medusa/issues/896) [#911](https://github.com/zakariaelas/medusa/issues/911) [#945](https://github.com/zakariaelas/medusa/issues/945) [#950](https://github.com/zakariaelas/medusa/issues/950) [#951](https://github.com/zakariaelas/medusa/issues/951) [#954](https://github.com/zakariaelas/medusa/issues/954) [#969](https://github.com/zakariaelas/medusa/issues/969) [#998](https://github.com/zakariaelas/medusa/issues/998) [#1017](https://github.com/zakariaelas/medusa/issues/1017) [#1110](https://github.com/zakariaelas/medusa/issues/1110)
+* return shipping and flow ([#125](https://github.com/zakariaelas/medusa/issues/125)) ([c1e821d](https://github.com/zakariaelas/medusa/commit/c1e821d9d4d33756c7309e5cf110d7aa9b67297d))
+* update and cancel swaps, claims, and returns ([#310](https://github.com/zakariaelas/medusa/issues/310)) ([cf66f97](https://github.com/zakariaelas/medusa/commit/cf66f97758003a41737602d4b1b1051b266d4f81))
+* **medusa:** tracking links ([#177](https://github.com/zakariaelas/medusa/issues/177)) ([99ad43b](https://github.com/zakariaelas/medusa/commit/99ad43bf47c3922f391d433448b1c4affd88f457))
+* notifications ([#172](https://github.com/zakariaelas/medusa/issues/172)) ([7308946](https://github.com/zakariaelas/medusa/commit/7308946e567ed4e63e1ed3d9d31b30c4f1a73f0d))
+* **medusa,brightpearl,segment,webshipper:** claims ([#163](https://github.com/zakariaelas/medusa/issues/163)) ([690d339](https://github.com/zakariaelas/medusa/commit/690d33966754a7dbe159c3ac09712a3c3bfaff0b))
+* webshipper ([#118](https://github.com/zakariaelas/medusa/issues/118)) ([893a7f6](https://github.com/zakariaelas/medusa/commit/893a7f69afea67e854a67fc3b92c8a10c9c1b75c))
+
+
+
+
+
 ## [1.3.2](https://github.com/medusajs/medusa/compare/medusa-fulfillment-webshipper@1.3.0...medusa-fulfillment-webshipper@1.3.2) (2022-06-19)
 
 **Note:** Version bump only for package medusa-fulfillment-webshipper

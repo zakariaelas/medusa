@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.25 (2022-06-27)
+
+
+### Bug Fixes
+
+* babel ([81960d5](https://github.com/zakariaelas/medusa/commit/81960d51812f093e04271f50ffe5de9bce17c06b))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+* working ([a9b1d75](https://github.com/zakariaelas/medusa/commit/a9b1d75074d2786df6dfca9064b3d9657a664d6d))
+* yarn lon ([3c49467](https://github.com/zakariaelas/medusa/commit/3c4946762c25220c18913f46537f777a55a209ec))
+
+
+### Features
+
+* dev cli ([#203](https://github.com/zakariaelas/medusa/issues/203)) ([695b1fd](https://github.com/zakariaelas/medusa/commit/695b1fd0a54a247502cb48ffb73d060356293b76)), closes [#199](https://github.com/zakariaelas/medusa/issues/199)
+
+
+
+
+
 ## [0.0.24](https://github.com/medusajs/medusa/compare/medusa-dev-cli@0.0.23...medusa-dev-cli@0.0.24) (2021-12-08)
 
 **Note:** Version bump only for package medusa-dev-cli

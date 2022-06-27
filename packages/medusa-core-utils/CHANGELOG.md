@@ -3,6 +3,140 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.32 (2022-06-27)
+
+
+### Bug Fixes
+
+* **medusa:** migrate cart service to typescript ([#884](https://github.com/zakariaelas/medusa/issues/884)) ([ed04132](https://github.com/zakariaelas/medusa/commit/ed041325332e47c5939a301dfd8ace8ad6dbc28d))
+* adds transformer to map field names to field_id names ([88d96a2](https://github.com/zakariaelas/medusa/commit/88d96a29fd8dbc44ed7ba25154850d417577acad))
+* bumps class-transformer to 0.5.1 ([#837](https://github.com/zakariaelas/medusa/issues/837)) ([38b0e29](https://github.com/zakariaelas/medusa/commit/38b0e295b23eccd281288d854d5876ff418de91d))
+* don't divide zero decimal currencies ([cfab2d4](https://github.com/zakariaelas/medusa/commit/cfab2d408a296a938266d0989b1de67d060b2ed5))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+* use type to choose transformer before adding or replacing documents ([24eecd2](https://github.com/zakariaelas/medusa/commit/24eecd2922e0c3425f2d43549b3227c756820387))
+
+
+### Features
+
+* In band inventory updates ([#311](https://github.com/zakariaelas/medusa/issues/311)) ([f07cc0f](https://github.com/zakariaelas/medusa/commit/f07cc0fa406d8f0fe33f9088fe6cb3ce8e78b05f))
+* medusa-source-shopify loader ([#563](https://github.com/zakariaelas/medusa/issues/563)) ([577bcc2](https://github.com/zakariaelas/medusa/commit/577bcc23d44c87b91b2b685fd4ddfc5d21a0aa47))
+* Product filtering ([#439](https://github.com/zakariaelas/medusa/issues/439)) ([5ef2a3f](https://github.com/zakariaelas/medusa/commit/5ef2a3fbcb108c8d49b7754ea14ac890af643950))
+* Typescript for API layer ([#817](https://github.com/zakariaelas/medusa/issues/817)) ([373532e](https://github.com/zakariaelas/medusa/commit/373532ecbc8196f47e71af95a8cf82a14a4b1f9e))
+* **medusa:** Add support for filtering with gt, lt, gte and lte ([#190](https://github.com/zakariaelas/medusa/issues/190)) ([dd0491f](https://github.com/zakariaelas/medusa/commit/dd0491f52132aed24f642589b12fcf636b719580))
+* **medusa:** cart context ([#201](https://github.com/zakariaelas/medusa/issues/201)) ([dd7b306](https://github.com/zakariaelas/medusa/commit/dd7b306333fbe1042f5cf2bed614bce84ea9475f))
+
+
+
+## 1.0.10 (2020-09-09)
+
+
+### Bug Fixes
+
+* updates license ([db519fb](https://github.com/zakariaelas/medusa/commit/db519fbaa6f8ad02c19cbecba5d4f28ba1ee81aa))
+
+
+
+## 1.0.7 (2020-09-07)
+
+
+### Bug Fixes
+
+* **medusa-core-utils:** adds country utils ([00cbf84](https://github.com/zakariaelas/medusa/commit/00cbf8444d7b64ae8040db187748a63c64509686))
+
+
+
+## 1.0.1 (2020-09-05)
+
+
+
+## 1.0.1-beta.0 (2020-09-04)
+
+
+### Bug Fixes
+
+* **medusa:** product variant metadata ([#98](https://github.com/zakariaelas/medusa/issues/98)) ([520115a](https://github.com/zakariaelas/medusa/commit/520115a2cef7ee3f0259a682bd82e693c6327790))
+
+
+
+# 1.0.0 (2020-09-03)
+
+
+
+# 1.0.0-alpha.30 (2020-08-28)
+
+
+
+# 1.0.0-alpha.27 (2020-08-27)
+
+
+### Bug Fixes
+
+* **contentful-plugin:** Keep existing entry fields ([eb47896](https://github.com/zakariaelas/medusa/commit/eb478966684776bb2aa48e98789519644b05cd33))
+
+
+
+# 1.0.0-alpha.24 (2020-08-27)
+
+
+
+# 1.0.0-alpha.3 (2020-08-20)
+
+
+
+# 1.0.0-alpha.2 (2020-08-20)
+
+
+
+# 1.0.0-alpha.1 (2020-08-20)
+
+
+
+# 1.0.0-alpha.0 (2020-08-20)
+
+
+
+# 0.3.0 (2020-04-06)
+
+
+
+# 0.2.0 (2020-04-06)
+
+
+
+# 0.2.0-alpha.0 (2020-04-04)
+
+
+
+## 0.1.6-alpha.0 (2020-03-24)
+
+
+
+## 0.1.5-alpha.0 (2020-03-24)
+
+
+
+## 0.1.4-alpha.0 (2020-03-24)
+
+
+
+## 0.1.3-alpha.0 (2020-03-24)
+
+
+
+## 0.1.2-alpha.0 (2020-03-24)
+
+
+
+## 0.1.1-alpha.0 (2020-03-24)
+
+
+
+# 0.1.0-alpha.0 (2020-03-24)
+
+
+
+
+
 ## [1.1.31](https://github.com/medusajs/medusa/compare/medusa-core-utils@1.1.30...medusa-core-utils@1.1.31) (2021-12-08)
 
 ### Bug Fixes

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.12 (2022-06-27)
+
+
+### Bug Fixes
+
+* canary assist ([b988b67](https://github.com/zakariaelas/medusa/commit/b988b67118553c88ef6c6d53ae99ef1ad9d67305))
+* ci detection ([9475ed7](https://github.com/zakariaelas/medusa/commit/9475ed7689508cf8bda166ac8d7ccda544e76e2f))
+* deps ([c8d8fa2](https://github.com/zakariaelas/medusa/commit/c8d8fa28ca928f4f065b7d6d00d0152cfe9f727c))
+* make shipping_option_id on requirements optional ([#340](https://github.com/zakariaelas/medusa/issues/340)) ([16b0fa3](https://github.com/zakariaelas/medusa/commit/16b0fa377a577abd7976c2beaff83e2030969df8))
+
+
+### Features
+
+* medusa-source-shopify loader ([#563](https://github.com/zakariaelas/medusa/issues/563)) ([577bcc2](https://github.com/zakariaelas/medusa/commit/577bcc23d44c87b91b2b685fd4ddfc5d21a0aa47))
+* medusa-telemetry ([#328](https://github.com/zakariaelas/medusa/issues/328)) ([cfe19f7](https://github.com/zakariaelas/medusa/commit/cfe19f7f9d3bb17425348362b148a0b4b7a649ef))
+* update and cancel swaps, claims, and returns ([#310](https://github.com/zakariaelas/medusa/issues/310)) ([cf66f97](https://github.com/zakariaelas/medusa/commit/cf66f97758003a41737602d4b1b1051b266d4f81))
+
+
+
+
+
 ## [0.0.11](https://github.com/medusajs/medusa/compare/medusa-telemetry@0.0.10...medusa-telemetry@0.0.11) (2021-12-08)
 
 ### Features

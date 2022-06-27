@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.1 (2022-06-27)
+
+
+### Bug Fixes
+
+* release ([fc3fbc8](https://github.com/zakariaelas/medusa/commit/fc3fbc897fad5c8a5d3eea828ac7277fba9d70af))
+* source shopify handle duplicate unique values and more efficient updates ([#1154](https://github.com/zakariaelas/medusa/issues/1154)) ([eb8e247](https://github.com/zakariaelas/medusa/commit/eb8e247e7de6ca0894eee640758748d5f21b6122))
+* source-shopify tests ([#1192](https://github.com/zakariaelas/medusa/issues/1192)) ([4be991c](https://github.com/zakariaelas/medusa/commit/4be991c15648c633f619947a38ad9fefad5b8f07))
+
+
+### Features
+
+* medusa-source-shopify loader ([#563](https://github.com/zakariaelas/medusa/issues/563)) ([577bcc2](https://github.com/zakariaelas/medusa/commit/577bcc23d44c87b91b2b685fd4ddfc5d21a0aa47))
+
+
+
+
+
 # [1.2.0](https://github.com/medusajs/medusa/compare/medusa-source-shopify@1.1.1...medusa-source-shopify@1.2.0) (2022-05-01)
 
 

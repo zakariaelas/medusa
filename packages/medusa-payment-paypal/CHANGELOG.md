@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.3 (2022-06-27)
+
+
+### Bug Fixes
+
+* **medusa-payment-paypal:** Should not throw when canceling already canceled payment ([#1470](https://github.com/zakariaelas/medusa/issues/1470)) ([5838793](https://github.com/zakariaelas/medusa/commit/58387936c9c944e85c4e72144cf81a52d1f0e505))
+* account for lowest currency unit in paypal ([#761](https://github.com/zakariaelas/medusa/issues/761)) ([b30a2af](https://github.com/zakariaelas/medusa/commit/b30a2af94de32476d82bbe4727ee7b224d6437fe))
+* merge develop ([a468c45](https://github.com/zakariaelas/medusa/commit/a468c451e82c68f41b5005a2e480057f6124aaa6))
+* release ([fc3fbc8](https://github.com/zakariaelas/medusa/commit/fc3fbc897fad5c8a5d3eea828ac7277fba9d70af))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+
+
+### Features
+
+* adds paypal ([#168](https://github.com/zakariaelas/medusa/issues/168)) ([#169](https://github.com/zakariaelas/medusa/issues/169)) ([427ae25](https://github.com/zakariaelas/medusa/commit/427ae25016bb3a22ebc05aa7b18017132846567c))
+
+
+
+
+
 ## [1.2.2](https://github.com/medusajs/medusa/compare/medusa-payment-paypal@1.2.0...medusa-payment-paypal@1.2.2) (2022-06-19)
 
 

@@ -3,6 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.1 (2022-06-27)
+
+
+### Bug Fixes
+
+* better cli ([953747f](https://github.com/zakariaelas/medusa/commit/953747f3d2409cef82faf926ad316a384e6667b4))
+* canary assist ([b988b67](https://github.com/zakariaelas/medusa/commit/b988b67118553c88ef6c6d53ae99ef1ad9d67305))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+* setup to allow login to Medusa Cloud ([bbd2f02](https://github.com/zakariaelas/medusa/commit/bbd2f02d549330df160c76cf1f4e4d5e7d08f246))
+
+
+### Features
+
+* **medusa-cli:** Allow to revert migrations from the CLI ([#1353](https://github.com/zakariaelas/medusa/issues/1353)) ([012513b](https://github.com/zakariaelas/medusa/commit/012513b6a1e90169e9e0e53f7a59841a34fbaeb3))
+* add medusa-react ([#913](https://github.com/zakariaelas/medusa/issues/913)) ([d0d8dd7](https://github.com/zakariaelas/medusa/commit/d0d8dd7bf62eaac71df8714c2dfb4f204d192f51))
+* CLI + local linking ([#313](https://github.com/zakariaelas/medusa/issues/313)) ([f4a7138](https://github.com/zakariaelas/medusa/commit/f4a7138a5888e69e19bebe8f4962afc42e9a945d)), closes [#320](https://github.com/zakariaelas/medusa/issues/320)
+* dev cli ([#203](https://github.com/zakariaelas/medusa/issues/203)) ([695b1fd](https://github.com/zakariaelas/medusa/commit/695b1fd0a54a247502cb48ffb73d060356293b76)), closes [#199](https://github.com/zakariaelas/medusa/issues/199)
+* medusa-telemetry ([#328](https://github.com/zakariaelas/medusa/issues/328)) ([cfe19f7](https://github.com/zakariaelas/medusa/commit/cfe19f7f9d3bb17425348362b148a0b4b7a649ef))
+* new tax api ([#979](https://github.com/zakariaelas/medusa/issues/979)) ([47588e7](https://github.com/zakariaelas/medusa/commit/47588e7a8d3b2ae2fed0c1e87fdf1ee2db6bcdc2)), closes [#885](https://github.com/zakariaelas/medusa/issues/885) [#896](https://github.com/zakariaelas/medusa/issues/896) [#911](https://github.com/zakariaelas/medusa/issues/911) [#945](https://github.com/zakariaelas/medusa/issues/945) [#950](https://github.com/zakariaelas/medusa/issues/950) [#951](https://github.com/zakariaelas/medusa/issues/951) [#954](https://github.com/zakariaelas/medusa/issues/954) [#969](https://github.com/zakariaelas/medusa/issues/969) [#998](https://github.com/zakariaelas/medusa/issues/998) [#1017](https://github.com/zakariaelas/medusa/issues/1017) [#1110](https://github.com/zakariaelas/medusa/issues/1110)
+* **cli:** adds seed script ([5136c77](https://github.com/zakariaelas/medusa/commit/5136c7740137afcda52393131ef931eb76ea9f5d))
+
+
+
+## 1.0.10 (2020-09-09)
+
+
+### Bug Fixes
+
+* ignore files ([eca1e00](https://github.com/zakariaelas/medusa/commit/eca1e006a77472c9402cd85bb879f08134af200b))
+* updates license ([db519fb](https://github.com/zakariaelas/medusa/commit/db519fbaa6f8ad02c19cbecba5d4f28ba1ee81aa))
+
+
+
+## 1.0.1 (2020-09-05)
+
+
+
+# 1.0.0 (2020-09-03)
+
+
+
+# 1.0.0-alpha.21 (2020-08-25)
+
+
+
+# 1.0.0-alpha.3 (2020-08-20)
+
+
+
+# 1.0.0-alpha.2 (2020-08-20)
+
+
+
+# 1.0.0-alpha.1 (2020-08-20)
+
+
+
+# 1.0.0-alpha.0 (2020-08-20)
+
+
+
+
+
 # [1.3.0](https://github.com/medusajs/medusa/compare/@medusajs/medusa-cli@1.2.1...@medusajs/medusa-cli@1.3.0) (2022-05-01)
 
 **Note:** Version bump only for package @medusajs/medusa-cli

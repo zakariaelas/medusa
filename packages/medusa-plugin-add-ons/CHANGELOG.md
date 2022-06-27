@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.1 (2022-06-27)
+
+
+### Bug Fixes
+
+* merge develop ([2982a8e](https://github.com/zakariaelas/medusa/commit/2982a8e682e90beb4549d969d9d3b04d78a46a2d))
+* merge develop ([a468c45](https://github.com/zakariaelas/medusa/commit/a468c451e82c68f41b5005a2e480057f6124aaa6))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+* **medusa-plugin-add-ons:** fixes add-on decorator ([5071f36](https://github.com/zakariaelas/medusa/commit/5071f362e4e140d11a1342a5058e8ad2efaa1ed4))
+* **medusa-plugin-addon:** Fixes admin endpoints, Adds flag to avoid merging add-on line-items ([d8483cd](https://github.com/zakariaelas/medusa/commit/d8483cd1352ecc587112723786b7c31882f9416e))
+
+
+### Features
+
+* **plugins:** Adds add-on plugin ([3de1e6d](https://github.com/zakariaelas/medusa/commit/3de1e6dd4ad4a2a48d4d8116ebdd011efce2b22a))
+
+
+
+
+
 # [1.2.0](https://github.com/medusajs/medusa/compare/medusa-plugin-add-ons@1.1.37...medusa-plugin-add-ons@1.2.0) (2022-05-01)
 
 **Note:** Version bump only for package medusa-plugin-add-ons

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.3 (2022-06-27)
+
+
+### Bug Fixes
+
+* **medusa-plugin-twilio-sms:** fix name in README ([#1457](https://github.com/zakariaelas/medusa/issues/1457)) ([56e79d3](https://github.com/zakariaelas/medusa/commit/56e79d334ecd2a67cad43c8ebd58e364f9e9fb59))
+* merge develop ([2982a8e](https://github.com/zakariaelas/medusa/commit/2982a8e682e90beb4549d969d9d3b04d78a46a2d))
+* merge develop ([a468c45](https://github.com/zakariaelas/medusa/commit/a468c451e82c68f41b5005a2e480057f6124aaa6))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+
+
+### Features
+
+* **plugins:** Adds Twilio SMS plugin ([35a91ae](https://github.com/zakariaelas/medusa/commit/35a91ae6a179e750b77df97f46a6b88d6b45819d))
+
+
+
+
+
 ## [1.2.2](https://github.com/medusajs/medusa/compare/medusa-plugin-twilio-sms@1.2.0...medusa-plugin-twilio-sms@1.2.2) (2022-06-19)
 
 **Note:** Version bump only for package medusa-plugin-twilio-sms

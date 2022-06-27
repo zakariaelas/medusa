@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.42 (2022-06-27)
+
+
+### Bug Fixes
+
+* merge develop ([2982a8e](https://github.com/zakariaelas/medusa/commit/2982a8e682e90beb4549d969d9d3b04d78a46a2d))
+* merge develop ([a468c45](https://github.com/zakariaelas/medusa/commit/a468c451e82c68f41b5005a2e480057f6124aaa6))
+* release ([fc3fbc8](https://github.com/zakariaelas/medusa/commit/fc3fbc897fad5c8a5d3eea828ac7277fba9d70af))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+
+
+### Features
+
+* medusa-react admin hooks ([#978](https://github.com/zakariaelas/medusa/issues/978)) ([2e38484](https://github.com/zakariaelas/medusa/commit/2e384842d5b2e9742a86b96f28a8f00357795b86)), closes [#1019](https://github.com/zakariaelas/medusa/issues/1019)
+* **plugins:** Adds Mailchimp newsletter subscription ([89c21f2](https://github.com/zakariaelas/medusa/commit/89c21f2f5b317b2de368d4429c1eacc373937217))
+
+
+
+
+
 ## [1.1.41](https://github.com/medusajs/medusa/compare/medusa-plugin-mailchimp@1.1.39...medusa-plugin-mailchimp@1.1.41) (2022-06-19)
 
 **Note:** Version bump only for package medusa-plugin-mailchimp

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.3 (2022-06-27)
+
+
+### Bug Fixes
+
+* allow changing regions safely ([06f5fe2](https://github.com/zakariaelas/medusa/commit/06f5fe267013d95231d96318fe8a055ad8040174))
+* cleanup ([5441d47](https://github.com/zakariaelas/medusa/commit/5441d47f88d759742e3d3d29b29bc38feceac583))
+* include discount rule in swap retrieval ([#682](https://github.com/zakariaelas/medusa/issues/682)) ([a5fe1c2](https://github.com/zakariaelas/medusa/commit/a5fe1c2e284ff5cb757b792c1a3c8414c211e4e8))
+* meiliesearch README.md + remove: searchService from silentResolver ([1444353](https://github.com/zakariaelas/medusa/commit/1444353b0af4e18a23cebbf46b6d1246aa495bb4))
+* move subscriber to core ([700f8c3](https://github.com/zakariaelas/medusa/commit/700f8c39190469337c74d9bf3f046f293024e521))
+* release ([fc3fbc8](https://github.com/zakariaelas/medusa/commit/fc3fbc897fad5c8a5d3eea828ac7277fba9d70af))
+* remove package-lock ([08b2d8f](https://github.com/zakariaelas/medusa/commit/08b2d8fc39e7e04fadbfb012fcbc083febf9c290))
+* use type to choose transformer before adding or replacing documents ([24eecd2](https://github.com/zakariaelas/medusa/commit/24eecd2922e0c3425f2d43549b3227c756820387))
+
+
+
+
+
 ## [0.2.2](https://github.com/medusajs/medusa/compare/medusa-plugin-meilisearch@0.2.0...medusa-plugin-meilisearch@0.2.2) (2022-06-19)
 
 **Note:** Version bump only for package medusa-plugin-meilisearch

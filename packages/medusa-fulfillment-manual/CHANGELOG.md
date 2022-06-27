@@ -3,6 +3,75 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.32 (2022-06-27)
+
+
+### Bug Fixes
+
+* Adds manual return option ([#290](https://github.com/zakariaelas/medusa/issues/290)) ([350603a](https://github.com/zakariaelas/medusa/commit/350603ac579027bd96d6855b9a78750a46d857a3))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+
+
+
+## 1.0.10 (2020-09-09)
+
+
+### Bug Fixes
+
+* updates license ([db519fb](https://github.com/zakariaelas/medusa/commit/db519fbaa6f8ad02c19cbecba5d4f28ba1ee81aa))
+
+
+
+## 1.0.7 (2020-09-07)
+
+
+
+## 1.0.1 (2020-09-05)
+
+
+
+## 1.0.1-beta.0 (2020-09-04)
+
+
+
+# 1.0.0 (2020-09-03)
+
+
+
+# 1.0.0-alpha.30 (2020-08-28)
+
+
+
+# 1.0.0-alpha.27 (2020-08-27)
+
+
+
+# 1.0.0-alpha.26 (2020-08-27)
+
+
+
+# 1.0.0-alpha.24 (2020-08-27)
+
+
+
+# 1.0.0-alpha.3 (2020-08-20)
+
+
+
+# 1.0.0-alpha.2 (2020-08-20)
+
+
+
+# 1.0.0-alpha.1 (2020-08-20)
+
+
+
+# 1.0.0-alpha.0 (2020-08-20)
+
+
+
+
+
 ## [1.1.31](https://github.com/medusajs/medusa/compare/medusa-fulfillment-manual@1.1.30...medusa-fulfillment-manual@1.1.31) (2021-12-08)
 
 **Note:** Version bump only for package medusa-fulfillment-manual

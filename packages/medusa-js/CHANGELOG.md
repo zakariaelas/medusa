@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.3 (2022-06-27)
+
+
+### Bug Fixes
+
+* **medusa:** Remove unsupported Discount endpoints ([#1367](https://github.com/zakariaelas/medusa/issues/1367)) ([9acee27](https://github.com/zakariaelas/medusa/commit/9acee2799ead683575edd0f7172f336878569dfe))
+* **medusa-js:** Updated URLs for JS Client ([#1435](https://github.com/zakariaelas/medusa/issues/1435)) ([98f5c4e](https://github.com/zakariaelas/medusa/commit/98f5c4ec8bc9809de44223e90a36dfdfd6835503))
+* `CustomerGroups` missing  features in the clients ([#1159](https://github.com/zakariaelas/medusa/issues/1159)) ([218b20b](https://github.com/zakariaelas/medusa/commit/218b20b26db46f0a91736ece2530a83fa94aed97))
+* adds order by functionality to products ([#1021](https://github.com/zakariaelas/medusa/issues/1021)) ([3bf32e5](https://github.com/zakariaelas/medusa/commit/3bf32e5dc9ad3150762b9bb744b0453d3640e204))
+* client admin endpoints ([#956](https://github.com/zakariaelas/medusa/issues/956)) ([2efab08](https://github.com/zakariaelas/medusa/commit/2efab08040917a2971852d741b82f86134dda075))
+* complete cart return type ([#902](https://github.com/zakariaelas/medusa/issues/902)) ([2e837fc](https://github.com/zakariaelas/medusa/commit/2e837fcdeeb1f9608c5b0c612c75c87c042d8286))
+* default `POST` request payloads to an empty object ([#1141](https://github.com/zakariaelas/medusa/issues/1141)) ([4e7435e](https://github.com/zakariaelas/medusa/commit/4e7435e4d706e9237e08e1bef1818c4d564a5f9c))
+* medusa-js admin endpoint types ([#968](https://github.com/zakariaelas/medusa/issues/968)) ([7cc3640](https://github.com/zakariaelas/medusa/commit/7cc36407962f4cc2b3ddc33ace0e2ffb8cc61c1b))
+* medusa-js complete cart types + oas comments ([#889](https://github.com/zakariaelas/medusa/issues/889)) ([487356a](https://github.com/zakariaelas/medusa/commit/487356a96ffc3886cf233e89e0b17dc3b6a665e5))
+* medusa-js fine-tuning ([#836](https://github.com/zakariaelas/medusa/issues/836)) ([ded496c](https://github.com/zakariaelas/medusa/commit/ded496cee5c8fb9b28b664e308dfb782e441c99b))
+* release ([fc3fbc8](https://github.com/zakariaelas/medusa/commit/fc3fbc897fad5c8a5d3eea828ac7277fba9d70af))
+* release ([5fa4848](https://github.com/zakariaelas/medusa/commit/5fa4848b17a9dd432c2361e5d9485950494a2bc6))
+* Type in AdminProductListTagsRes to use tags instead of types ([#958](https://github.com/zakariaelas/medusa/issues/958)) ([0ac52b7](https://github.com/zakariaelas/medusa/commit/0ac52b70fa23d9aa3ba6b5e220943ed15db4e643))
+* update payment session route ([#887](https://github.com/zakariaelas/medusa/issues/887)) ([e006402](https://github.com/zakariaelas/medusa/commit/e0064026eddc44c437aa09fc06d38b0005ab80c8))
+* use /admin/returns/:id/receive for swap returns ([#1041](https://github.com/zakariaelas/medusa/issues/1041)) ([7a3a183](https://github.com/zakariaelas/medusa/commit/7a3a1837a1db067c3629f1dfd7c6a95a56d649ca))
+
+
+### Features
+
+* **medusa:** Add endpoint for retrieving a DiscountCondition ([#1525](https://github.com/zakariaelas/medusa/issues/1525)) ([a87e1cd](https://github.com/zakariaelas/medusa/commit/a87e1cdf6558fd56bd91540853ca0bb715eda46e))
+* **medusa:** Add endpoints specific to DiscountConditions ([#1355](https://github.com/zakariaelas/medusa/issues/1355)) ([9ca45ea](https://github.com/zakariaelas/medusa/commit/9ca45ea492e755a88737322f900d60abdfa64024))
+* **medusa:** Support deleting prices from a price list by product or variant ([#1555](https://github.com/zakariaelas/medusa/issues/1555)) ([fa031fd](https://github.com/zakariaelas/medusa/commit/fa031fd28be8b12ff38eaec6e56c373324e0beed))
+* **medusa,medusa-js,medusa-react:** Add BatchJob API support in `medusa-js` + `medusa-react` ([#1704](https://github.com/zakariaelas/medusa/issues/1704)) ([7302d76](https://github.com/zakariaelas/medusa/commit/7302d76e12683c989f340d2fcfaf4338dca6554a))
+* Add Discount Admin endpoint to JS client ([#919](https://github.com/zakariaelas/medusa/issues/919)) ([2ca1a87](https://github.com/zakariaelas/medusa/commit/2ca1a8762da5bc30a246e2e77521071ed91e6c12))
+* add medusa-react ([#913](https://github.com/zakariaelas/medusa/issues/913)) ([d0d8dd7](https://github.com/zakariaelas/medusa/commit/d0d8dd7bf62eaac71df8714c2dfb4f204d192f51))
+* add returns admin endpoints to medusa-js ([#935](https://github.com/zakariaelas/medusa/issues/935)) ([b9d6f95](https://github.com/zakariaelas/medusa/commit/b9d6f95dbd32c096e59057797fd0cf479ff23c7b))
+* add store admin endpoints to medusa-js ([#938](https://github.com/zakariaelas/medusa/issues/938)) ([31fad74](https://github.com/zakariaelas/medusa/commit/31fad7439cc4b95e269e7b6bc5d813cb2479329c))
+* Adds Auth Admin API to `medusa-js` ([#917](https://github.com/zakariaelas/medusa/issues/917)) ([5c47184](https://github.com/zakariaelas/medusa/commit/5c47184b1035fc36440ff95750a4bb461904246d))
+* Adds Customer Admin routes to JS client ([#918](https://github.com/zakariaelas/medusa/issues/918)) ([25fe224](https://github.com/zakariaelas/medusa/commit/25fe224a10842a7ac93ed496a6724ef113b41916))
+* customer group customers client endpoints ([#1221](https://github.com/zakariaelas/medusa/issues/1221)) ([b7f6996](https://github.com/zakariaelas/medusa/commit/b7f699654bd8c5b08919667d4e29c835901e1af9))
+* customer groups client endpoints ([#1147](https://github.com/zakariaelas/medusa/issues/1147)) ([93426bf](https://github.com/zakariaelas/medusa/commit/93426bfc0263b3a19e6d47e19cc498fea441fb30))
+* customer groups react hooks ([#1153](https://github.com/zakariaelas/medusa/issues/1153)) ([daf49bc](https://github.com/zakariaelas/medusa/commit/daf49bcaf31e6e86cfd13a24efd5b3de626617a4))
+* medusa js admin regions ([#939](https://github.com/zakariaelas/medusa/issues/939)) ([8532c96](https://github.com/zakariaelas/medusa/commit/8532c966b59082ac60d221bc3bb7f92d6f94e5e4))
+* medusa js admin shipping options ([#934](https://github.com/zakariaelas/medusa/issues/934)) ([8b1b551](https://github.com/zakariaelas/medusa/commit/8b1b551260c8f3764135ed65bd099b8e9a0f23da))
+* medusa-js admin return reasons ([#931](https://github.com/zakariaelas/medusa/issues/931)) ([0acc462](https://github.com/zakariaelas/medusa/commit/0acc462e1ebe51368ceedeea85d6f51c6fc3bfc4))
+* medusa-react admin hooks ([#978](https://github.com/zakariaelas/medusa/issues/978)) ([2e38484](https://github.com/zakariaelas/medusa/commit/2e384842d5b2e9742a86b96f28a8f00357795b86)), closes [#1019](https://github.com/zakariaelas/medusa/issues/1019)
+* new tax api ([#979](https://github.com/zakariaelas/medusa/issues/979)) ([47588e7](https://github.com/zakariaelas/medusa/commit/47588e7a8d3b2ae2fed0c1e87fdf1ee2db6bcdc2)), closes [#885](https://github.com/zakariaelas/medusa/issues/885) [#896](https://github.com/zakariaelas/medusa/issues/896) [#911](https://github.com/zakariaelas/medusa/issues/911) [#945](https://github.com/zakariaelas/medusa/issues/945) [#950](https://github.com/zakariaelas/medusa/issues/950) [#951](https://github.com/zakariaelas/medusa/issues/951) [#954](https://github.com/zakariaelas/medusa/issues/954) [#969](https://github.com/zakariaelas/medusa/issues/969) [#998](https://github.com/zakariaelas/medusa/issues/998) [#1017](https://github.com/zakariaelas/medusa/issues/1017) [#1110](https://github.com/zakariaelas/medusa/issues/1110)
+* Typescript for API layer ([#817](https://github.com/zakariaelas/medusa/issues/817)) ([373532e](https://github.com/zakariaelas/medusa/commit/373532ecbc8196f47e71af95a8cf82a14a4b1f9e))
+
+
+
+
+
 ## [1.2.2](https://github.com/medusajs/medusa/compare/@medusajs/medusa-js@1.2.0...@medusajs/medusa-js@1.2.2) (2022-06-19)
 
 

@@ -3,6 +3,137 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.1 (2022-06-27)
+
+
+### Bug Fixes
+
+* atomic phase error handler ([#1104](https://github.com/zakariaelas/medusa/issues/1104)) ([f983cfa](https://github.com/zakariaelas/medusa/commit/f983cfada675b9c2ad89f1dea37f862673383f54))
+* ensures no duplicate tax lines when completing cart ([#1262](https://github.com/zakariaelas/medusa/issues/1262)) ([607a382](https://github.com/zakariaelas/medusa/commit/607a382b4ee190c25eafa345674b55b74a7d6349))
+* filter type in jsdoc ([c3a6045](https://github.com/zakariaelas/medusa/commit/c3a6045dd889a0d32d9e7f6e806d96d8333ea0a5))
+* product ordering ([57a6612](https://github.com/zakariaelas/medusa/commit/57a6612e845c078aec023d0cc49d6bfc175a1b37))
+* release ([fc3fbc8](https://github.com/zakariaelas/medusa/commit/fc3fbc897fad5c8a5d3eea828ac7277fba9d70af))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+* use type to choose transformer before adding or replacing documents ([24eecd2](https://github.com/zakariaelas/medusa/commit/24eecd2922e0c3425f2d43549b3227c756820387))
+
+
+### Features
+
+* Allow retrieval of soft-deleted products ([#723](https://github.com/zakariaelas/medusa/issues/723)) ([1e50aee](https://github.com/zakariaelas/medusa/commit/1e50aee4feb55092560dd4a9c51a0671363e8576))
+* notifications ([#172](https://github.com/zakariaelas/medusa/issues/172)) ([7308946](https://github.com/zakariaelas/medusa/commit/7308946e567ed4e63e1ed3d9d31b30c4f1a73f0d))
+* return shipping and flow ([#125](https://github.com/zakariaelas/medusa/issues/125)) ([c1e821d](https://github.com/zakariaelas/medusa/commit/c1e821d9d4d33756c7309e5cf110d7aa9b67297d))
+* Typescript for API layer ([#817](https://github.com/zakariaelas/medusa/issues/817)) ([373532e](https://github.com/zakariaelas/medusa/commit/373532ecbc8196f47e71af95a8cf82a14a4b1f9e))
+* **medusa:** Add support for filtering with gt, lt, gte and lte ([#190](https://github.com/zakariaelas/medusa/issues/190)) ([dd0491f](https://github.com/zakariaelas/medusa/commit/dd0491f52132aed24f642589b12fcf636b719580))
+* **medusa-interfaces:** Adds schema options to base model ([cc23a3b](https://github.com/zakariaelas/medusa/commit/cc23a3b0706c41ec57bb25ea3de9c6e39bd04f31))
+* webshipper ([#118](https://github.com/zakariaelas/medusa/issues/118)) ([893a7f6](https://github.com/zakariaelas/medusa/commit/893a7f69afea67e854a67fc3b92c8a10c9c1b75c))
+
+
+
+## 1.0.10 (2020-09-09)
+
+
+### Bug Fixes
+
+* updates license ([db519fb](https://github.com/zakariaelas/medusa/commit/db519fbaa6f8ad02c19cbecba5d4f28ba1ee81aa))
+
+
+
+## 1.0.7 (2020-09-07)
+
+
+
+## 1.0.1 (2020-09-05)
+
+
+
+## 1.0.1-beta.0 (2020-09-04)
+
+
+
+# 1.0.0 (2020-09-03)
+
+
+
+# 1.0.0-alpha.30 (2020-08-28)
+
+
+
+# 1.0.0-alpha.27 (2020-08-27)
+
+
+### Features
+
+* **pagination:** Adds MVP pagination to orders and products for admin routes ([9dc6999](https://github.com/zakariaelas/medusa/commit/9dc6999a9a0c11d33eb9affa953ad1b44bd5e8b8))
+
+
+
+# 1.0.0-alpha.24 (2020-08-27)
+
+
+
+# 1.0.0-alpha.3 (2020-08-20)
+
+
+
+# 1.0.0-alpha.2 (2020-08-20)
+
+
+
+# 1.0.0-alpha.1 (2020-08-20)
+
+
+
+# 1.0.0-alpha.0 (2020-08-20)
+
+
+### Reverts
+
+* Revert "[medusa-interfaces] : Adds decorator functionality to BaseService (#39)" (#41) ([2273cc5](https://github.com/zakariaelas/medusa/commit/2273cc519ad4d6ae16157173aba3955d16745e1d)), closes [#39](https://github.com/zakariaelas/medusa/issues/39) [#41](https://github.com/zakariaelas/medusa/issues/41)
+
+
+
+# 0.3.0 (2020-04-06)
+
+
+
+# 0.2.0 (2020-04-06)
+
+
+
+# 0.2.0-alpha.0 (2020-04-04)
+
+
+
+## 0.1.6-alpha.0 (2020-03-24)
+
+
+
+## 0.1.5-alpha.0 (2020-03-24)
+
+
+
+## 0.1.4-alpha.0 (2020-03-24)
+
+
+
+## 0.1.3-alpha.0 (2020-03-24)
+
+
+
+## 0.1.2-alpha.0 (2020-03-24)
+
+
+
+## 0.1.1-alpha.0 (2020-03-24)
+
+
+
+# 0.1.0-alpha.0 (2020-03-24)
+
+
+
+
+
 # [1.3.0](https://github.com/medusajs/medusa/compare/medusa-interfaces@1.2.1...medusa-interfaces@1.3.0) (2022-05-01)
 
 

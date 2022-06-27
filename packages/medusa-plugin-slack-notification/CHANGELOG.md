@@ -3,6 +3,111 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.3 (2022-06-27)
+
+
+### Bug Fixes
+
+* merge develop ([a468c45](https://github.com/zakariaelas/medusa/commit/a468c451e82c68f41b5005a2e480057f6124aaa6))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+* **slack:** show discount code flag ([b5bf650](https://github.com/zakariaelas/medusa/commit/b5bf650ec26182be6324bc56e7f6efd744a7131e))
+* zero decimal amounts in slack + gc total ([c6a5dff](https://github.com/zakariaelas/medusa/commit/c6a5dffa7bd8f627310d1f90364492084051dd47))
+
+
+### Features
+
+* Add DiscountConditions ([#1230](https://github.com/zakariaelas/medusa/issues/1230)) ([a610805](https://github.com/zakariaelas/medusa/commit/a610805917ee930d4cebde74905e541a468aa83b)), closes [#1146](https://github.com/zakariaelas/medusa/issues/1146) [#1149](https://github.com/zakariaelas/medusa/issues/1149) [#1156](https://github.com/zakariaelas/medusa/issues/1156) [#1170](https://github.com/zakariaelas/medusa/issues/1170) [#1172](https://github.com/zakariaelas/medusa/issues/1172) [#1212](https://github.com/zakariaelas/medusa/issues/1212) [#1224](https://github.com/zakariaelas/medusa/issues/1224) [#1228](https://github.com/zakariaelas/medusa/issues/1228)
+* allow product selection on discounts allocated to a specific item ([#395](https://github.com/zakariaelas/medusa/issues/395)) ([84d4d79](https://github.com/zakariaelas/medusa/commit/84d4d791eaf9508367a20d9f930ca959a7b707dd))
+* new tax api ([#979](https://github.com/zakariaelas/medusa/issues/979)) ([47588e7](https://github.com/zakariaelas/medusa/commit/47588e7a8d3b2ae2fed0c1e87fdf1ee2db6bcdc2)), closes [#885](https://github.com/zakariaelas/medusa/issues/885) [#896](https://github.com/zakariaelas/medusa/issues/896) [#911](https://github.com/zakariaelas/medusa/issues/911) [#945](https://github.com/zakariaelas/medusa/issues/945) [#950](https://github.com/zakariaelas/medusa/issues/950) [#951](https://github.com/zakariaelas/medusa/issues/951) [#954](https://github.com/zakariaelas/medusa/issues/954) [#969](https://github.com/zakariaelas/medusa/issues/969) [#998](https://github.com/zakariaelas/medusa/issues/998) [#1017](https://github.com/zakariaelas/medusa/issues/1017) [#1110](https://github.com/zakariaelas/medusa/issues/1110)
+
+
+
+## 1.0.10 (2020-09-09)
+
+
+### Bug Fixes
+
+* updates license ([db519fb](https://github.com/zakariaelas/medusa/commit/db519fbaa6f8ad02c19cbecba5d4f28ba1ee81aa))
+
+
+
+## 1.0.7 (2020-09-07)
+
+
+
+## 1.0.5 (2020-09-06)
+
+
+### Bug Fixes
+
+* **medusa-plugin-slack-notification:** adds currency code to line items ([83c49e0](https://github.com/zakariaelas/medusa/commit/83c49e0b9cf0c6bc30aefc47fcde10ed221b89e3))
+
+
+
+## 1.0.4 (2020-09-06)
+
+
+
+## 1.0.3 (2020-09-06)
+
+
+### Bug Fixes
+
+* **medusa-plugin-slack-order-notification:** adds additional information ([#102](https://github.com/zakariaelas/medusa/issues/102)) ([f732a2d](https://github.com/zakariaelas/medusa/commit/f732a2d26a3ead4ef330a555961b49222e1f7244))
+
+
+
+## 1.0.1 (2020-09-05)
+
+
+
+## 1.0.1-beta.0 (2020-09-04)
+
+
+### Bug Fixes
+
+* **medusa-plugin-slack-notification:** Fixes slackbot ([#100](https://github.com/zakariaelas/medusa/issues/100)) ([1c8384c](https://github.com/zakariaelas/medusa/commit/1c8384c7c342ac3cb703f07a6d4d705b327e9716))
+
+
+
+# 1.0.0 (2020-09-03)
+
+
+
+# 1.0.0-alpha.30 (2020-08-28)
+
+
+
+# 1.0.0-alpha.27 (2020-08-27)
+
+
+
+# 1.0.0-alpha.26 (2020-08-27)
+
+
+
+# 1.0.0-alpha.24 (2020-08-27)
+
+
+
+# 1.0.0-alpha.3 (2020-08-20)
+
+
+
+# 1.0.0-alpha.2 (2020-08-20)
+
+
+
+# 1.0.0-alpha.1 (2020-08-20)
+
+
+
+# 1.0.0-alpha.0 (2020-08-20)
+
+
+
+
+
 ## [1.3.2](https://github.com/medusajs/medusa/compare/medusa-plugin-slack-notification@1.3.0...medusa-plugin-slack-notification@1.3.2) (2022-06-19)
 
 **Note:** Version bump only for package medusa-plugin-slack-notification

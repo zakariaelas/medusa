@@ -3,6 +3,132 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.41 (2022-06-27)
+
+
+### Bug Fixes
+
+* floor amounts ([5e2f550](https://github.com/zakariaelas/medusa/commit/5e2f550ae10a3eb7636edf6bf99197517a1fa7b3))
+* merge develop ([a468c45](https://github.com/zakariaelas/medusa/commit/a468c451e82c68f41b5005a2e480057f6124aaa6))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+* round instead of floor ([74a6b67](https://github.com/zakariaelas/medusa/commit/74a6b67f9db0a66fdf3cf69be6db62ae0deea635))
+
+
+### Features
+
+* **medusa-payment-stripe:** Ability to add payment description and improve status resolution ([#1404](https://github.com/zakariaelas/medusa/issues/1404)) ([327614e](https://github.com/zakariaelas/medusa/commit/327614e126d57b1c53ca95b2298c8e4ec1dd34fb))
+* **stripe:** adds giropay provider ([5873682](https://github.com/zakariaelas/medusa/commit/58736824911d4fa1b252e93313c71de607405eb9))
+
+
+
+## 1.0.10 (2020-09-09)
+
+
+### Bug Fixes
+
+* updates license ([db519fb](https://github.com/zakariaelas/medusa/commit/db519fbaa6f8ad02c19cbecba5d4f28ba1ee81aa))
+
+
+
+## 1.0.7 (2020-09-07)
+
+
+
+## 1.0.2 (2020-09-06)
+
+
+
+## 1.0.1 (2020-09-05)
+
+
+
+## 1.0.1-beta.0 (2020-09-04)
+
+
+
+# 1.0.0 (2020-09-03)
+
+
+
+# 1.0.0-alpha.30 (2020-08-28)
+
+
+
+# 1.0.0-alpha.27 (2020-08-27)
+
+
+
+# 1.0.0-alpha.25 (2020-08-27)
+
+
+
+# 1.0.0-alpha.24 (2020-08-27)
+
+
+### Bug Fixes
+
+* **medusa-payment-stripe:** adds missing await in updateSession ([0cebcd2](https://github.com/zakariaelas/medusa/commit/0cebcd25211f32088e19e56dee095129ee2da86b))
+
+
+
+# 1.0.0-alpha.3 (2020-08-20)
+
+
+
+# 1.0.0-alpha.2 (2020-08-20)
+
+
+
+# 1.0.0-alpha.1 (2020-08-20)
+
+
+
+# 1.0.0-alpha.0 (2020-08-20)
+
+
+
+# 0.3.0 (2020-04-06)
+
+
+
+# 0.2.0 (2020-04-06)
+
+
+
+# 0.2.0-alpha.0 (2020-04-04)
+
+
+
+## 0.1.6-alpha.0 (2020-03-24)
+
+
+
+## 0.1.5-alpha.0 (2020-03-24)
+
+
+
+## 0.1.4-alpha.0 (2020-03-24)
+
+
+
+## 0.1.3-alpha.0 (2020-03-24)
+
+
+
+## 0.1.2-alpha.0 (2020-03-24)
+
+
+
+## 0.1.1-alpha.0 (2020-03-24)
+
+
+
+# 0.1.0-alpha.0 (2020-03-24)
+
+
+
+
+
 ## [1.1.40](https://github.com/medusajs/medusa/compare/medusa-payment-stripe@1.1.38...medusa-payment-stripe@1.1.40) (2022-06-19)
 
 

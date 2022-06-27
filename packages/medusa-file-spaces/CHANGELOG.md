@@ -3,6 +3,83 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.3 (2022-06-27)
+
+
+### Bug Fixes
+
+* **medusa-file-spaces:** Allow duplicate filenames ([#1474](https://github.com/zakariaelas/medusa/issues/1474)) ([525910f](https://github.com/zakariaelas/medusa/commit/525910f72aa76355c29dd153f28ea08221956f3e))
+* merge develop ([2982a8e](https://github.com/zakariaelas/medusa/commit/2982a8e682e90beb4549d969d9d3b04d78a46a2d))
+* merge develop ([a468c45](https://github.com/zakariaelas/medusa/commit/a468c451e82c68f41b5005a2e480057f6124aaa6))
+* release assist ([668e8a7](https://github.com/zakariaelas/medusa/commit/668e8a740200847fc2a41c91d2979097f1392532))
+
+
+### Features
+
+* **medusa:** Extend file-service interface + move to core ([#1577](https://github.com/zakariaelas/medusa/issues/1577)) ([8e42d37](https://github.com/zakariaelas/medusa/commit/8e42d37e84e80c003b9c0311117ab8a8871aa61b))
+* **medusa-file-spaces:** DigitalOcean fileservice streaming ([#1585](https://github.com/zakariaelas/medusa/issues/1585)) ([abaf10b](https://github.com/zakariaelas/medusa/commit/abaf10b31d1e9a60710da87cac5c9c869195660d)), closes [#1583](https://github.com/zakariaelas/medusa/issues/1583) [#1580](https://github.com/zakariaelas/medusa/issues/1580) [#1582](https://github.com/zakariaelas/medusa/issues/1582) [#1583](https://github.com/zakariaelas/medusa/issues/1583) [#1580](https://github.com/zakariaelas/medusa/issues/1580) [#1582](https://github.com/zakariaelas/medusa/issues/1582)
+
+
+
+## 1.0.10 (2020-09-09)
+
+
+### Bug Fixes
+
+* updates license ([db519fb](https://github.com/zakariaelas/medusa/commit/db519fbaa6f8ad02c19cbecba5d4f28ba1ee81aa))
+
+
+
+## 1.0.7 (2020-09-07)
+
+
+
+## 1.0.1 (2020-09-05)
+
+
+
+## 1.0.1-beta.0 (2020-09-04)
+
+
+
+# 1.0.0 (2020-09-03)
+
+
+
+# 1.0.0-alpha.30 (2020-08-28)
+
+
+
+# 1.0.0-alpha.27 (2020-08-27)
+
+
+
+# 1.0.0-alpha.26 (2020-08-27)
+
+
+
+# 1.0.0-alpha.24 (2020-08-27)
+
+
+
+# 1.0.0-alpha.3 (2020-08-20)
+
+
+
+# 1.0.0-alpha.2 (2020-08-20)
+
+
+
+# 1.0.0-alpha.1 (2020-08-20)
+
+
+
+# 1.0.0-alpha.0 (2020-08-20)
+
+
+
+
+
 ## [1.2.2](https://github.com/medusajs/medusa/compare/medusa-file-spaces@1.2.0...medusa-file-spaces@1.2.2) (2022-06-19)
 
 

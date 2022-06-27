@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.7 (2022-06-27)
+
+
+### Features
+
+* **medusa:** Extend file-service interface + move to core ([#1577](https://github.com/zakariaelas/medusa/issues/1577)) ([8e42d37](https://github.com/zakariaelas/medusa/commit/8e42d37e84e80c003b9c0311117ab8a8871aa61b))
+
+
+
+
+
 ## [1.0.6](https://github.com/medusajs/medusa/compare/medusa-file-minio@1.0.4...medusa-file-minio@1.0.6) (2022-06-19)
 
 **Note:** Version bump only for package medusa-file-minio
