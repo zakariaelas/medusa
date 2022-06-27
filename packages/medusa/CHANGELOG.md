@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.5](https://github.com/zakariaelas/medusa/compare/@zakariaelas/dusame@1.3.4...@zakariaelas/dusame@1.3.5) (2022-06-27)
+
+**Note:** Version bump only for package @zakariaelas/dusame
+
+
+
+
+
 ## [1.3.4](https://github.com/zakariaelas/medusa/compare/@zakariaelas/dusame@0.0.0-snapshot-20220627123920...@zakariaelas/dusame@1.3.4) (2022-06-27)
 
 **Note:** Version bump only for package @zakariaelas/dusame

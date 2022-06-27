@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.42](https://github.com/zakariaelas/medusa/compare/dusame-payment-stripe@1.1.40...dusame-payment-stripe@1.1.42) (2022-06-27)
+
+**Note:** Version bump only for package dusame-payment-stripe
+
+
+
+
+
 ## [1.1.41](https://github.com/zakariaelas/medusa/compare/dusame-payment-stripe@1.1.40...dusame-payment-stripe@1.1.41) (2022-06-27)
 
 **Note:** Version bump only for package dusame-payment-stripe

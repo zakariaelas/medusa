@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.39](https://github.com/zakariaelas/medusa/compare/dusame-plugin-economic@1.1.37...dusame-plugin-economic@1.1.39) (2022-06-27)
+
+**Note:** Version bump only for package dusame-plugin-economic
+
+
+
+
+
 ## [1.1.38](https://github.com/zakariaelas/medusa/compare/dusame-plugin-economic@1.1.37...dusame-plugin-economic@1.1.38) (2022-06-27)
 
 **Note:** Version bump only for package dusame-plugin-economic

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.21](https://github.com/zakariaelas/medusa/compare/dusame-plugin-discount-generator@1.1.19...dusame-plugin-discount-generator@1.1.21) (2022-06-27)
+
+**Note:** Version bump only for package dusame-plugin-discount-generator
+
+
+
+
+
 ## [1.1.20](https://github.com/zakariaelas/medusa/compare/dusame-plugin-discount-generator@1.1.19...dusame-plugin-discount-generator@1.1.20) (2022-06-27)
 
 **Note:** Version bump only for package dusame-plugin-discount-generator
