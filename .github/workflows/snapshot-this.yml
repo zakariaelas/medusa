@@ -110,7 +110,7 @@ jobs:
                 newTags.map(tag => (
                   '```sh\n' +
                   `yarn add ${tag}\n` +
-                  '```'git 
+                  '```'
                 )).join('\n')
               )
               await github.rest.issues.createComment({
