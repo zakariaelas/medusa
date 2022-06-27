@@ -13,9 +13,19 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
+  test:
+    name: Test thing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug workflow run
+        run: echo "${{ github.event.workflow_run.conclusion }}"
+
   snapshot:
     name: Snapshot Release
-    if: ${{ github.event.workflow_run.conclusion == 'success' }} && github.event.issue.pull_request && github.event.comment.body == '/snapshot-this'
+    if: |
+      github.event.workflow_run.conclusion == 'success' && 
+      github.event.issue.pull_request && 
+      github.event.comment.body == '/snapshot-this'
     runs-on: ubuntu-latest
     steps:
       - name: Validate pull request
@@ -110,7 +120,7 @@ jobs:
                 newTags.map(tag => (
                   '```sh\n' +
                   `yarn add ${tag}\n` +
-                  '```'git 
+                  '```'
                 )).join('\n')
               )
               await github.rest.issues.createComment({
