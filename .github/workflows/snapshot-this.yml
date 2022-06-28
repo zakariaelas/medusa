@@ -1,14 +1,15 @@
 name: Snapshot This
 
 on:
-  workflow_run:
-    workflows: [Medusa Pipeline]
-    types:
-      - completed
-
   issue_comment:
     types:
       - created
+
+  workflow_run:
+    workflows:
+      - Medusa Pipeline
+    types:
+      - completed
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
