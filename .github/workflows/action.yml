@@ -1,9 +1,9 @@
 name: Medusa Pipeline
-on: 
+on:
   pull_request:
     paths-ignore:
-      - 'docs/**'
-      - 'www/**'
+      - "docs/**"
+      - "www/**"
 
 jobs:
   unit-tests:
@@ -28,10 +28,21 @@ jobs:
       - name: Assert changed
         run: ./scripts/assert-changed-files-actions.sh "packages"
 
-      - name: Bootstrap packages
-        uses: ./.github/actions/cache-bootstrap
+      - name: Get Yarn cache directory
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Load Yarn cache
+        uses: actions/cache@v3
+        id: yarn-cache
         with:
-          extension: unit-tests
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install project dependencies
+        run: yarn --prefer-offline --frozen-lockfile
 
       - name: Build Packages
         run: yarn build
@@ -41,6 +52,7 @@ jobs:
 
   integration-tests-api:
     runs-on: ubuntu-latest
+    name: Integration tests (chunk ${{ matrix.chunk }})
 
     services:
       postgres:
@@ -55,6 +67,10 @@ jobs:
           --health-retries 5
         ports:
           - 5432:5432
+
+    strategy:
+      matrix:
+        chunk: [0, 1]
 
     steps:
       - name: Cancel Previous Runs
@@ -73,10 +89,21 @@ jobs:
           node-version: "14"
           cache: "yarn"
 
-      - name: Bootstrap packages
-        uses: ./.github/actions/cache-bootstrap
+      - name: Get Yarn cache directory
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Load Yarn cache
+        uses: actions/cache@v3
+        id: yarn-cache
         with:
-          extension: integration-tests
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install project dependencies
+        run: yarn --prefer-offline --frozen-lockfile
 
       - name: Build Packages
         run: lerna run build
@@ -95,10 +122,22 @@ jobs:
         run: yarn build
         working-directory: integration-tests/api
 
+      - name: Set Chunks
+        id: set-test-chunks
+        run: echo "::set-output name=test-chunks::$(npx jest --listTests --json | jq -cM '[_nwise(length / 2 | ceil)]')"
+        working-directory: integration-tests/api
+
+      - name: Set Chunk IDs
+        run: echo "::set-output name=test-chunk-ids::$(echo $CHUNKS | jq -cM 'to_entries | map(.key)')"
+        env:
+          CHUNKS: ${{ steps['set-test-chunks'].outputs['test-chunks'] }}
+
       - name: Run API integration tests
-        run: yarn test:integration:api --maxWorkers=50% --silent=false
+        run: echo $CHUNKS | jq '.[${{ matrix.chunk }}] | .[] | @text' | xargs yarn test
+        working-directory: integration-tests/api
         env:
           DB_PASSWORD: postgres
+          CHUNKS: ${{ needs.setup.outputs['test-chunks'] }}
 
   integration-tests-plugins:
     runs-on: ubuntu-latest
@@ -134,10 +173,21 @@ jobs:
           node-version: "14"
           cache: "yarn"
 
-      - name: Bootstrap packages
-        uses: ./.github/actions/cache-bootstrap
+      - name: Get Yarn cache directory
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Load Yarn cache
+        uses: actions/cache@v3
+        id: yarn-cache
         with:
-          extension: integration-tests
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install project dependencies
+        run: yarn --prefer-offline --frozen-lockfile
 
       - name: Build Packages
         run: lerna run build
