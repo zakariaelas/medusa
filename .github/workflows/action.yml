@@ -41,7 +41,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install project dependencies
-        run: yarn --prefer-offline
+        run: yarn --prefer-offline --frozen-lockfile
 
       - name: Build Packages
         run: yarn build
@@ -96,7 +96,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install project dependencies
-        run: yarn --prefer-offline
+        run: yarn --prefer-offline --frozen-lockfile
 
       - name: Build Packages
         run: lerna run build
@@ -167,7 +167,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install project dependencies
-        run: yarn --prefer-offline
+        run: yarn --prefer-offline --frozen-lockfile
 
       - name: Build Packages
         run: lerna run build
