@@ -87,7 +87,7 @@ jobs:
   integration-tests-api:
     runs-on: ubuntu-latest
     needs: setup
-    name: Integration tests (chunk ${{ matrix.chunk }})
+    name: Integration tests (${{ matrix.tests_dir }}) (chunk ${{ matrix.chunk }})
 
     services:
       postgres:
@@ -108,7 +108,7 @@ jobs:
         chunk: [0, 1]
         tests_dir:
           - integration-tests/api
-          - integrations-test/plugins
+          - integration-tests/plugins
 
     steps:
       - name: Checkout
@@ -161,58 +161,3 @@ jobs:
         env:
           DB_PASSWORD: postgres
           CHUNKS: ${{ steps['set-test-chunks'].outputs['test-chunks'] }}
-
-  integration-tests-plugins:
-    runs-on: ubuntu-latest
-    needs: setup
-
-    services:
-      postgres:
-        image: postgres
-        env:
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_USER: postgres
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 5432:5432
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2.3.5
-        with:
-          fetch-depth: 0
-
-      - name: Cache node_modules
-        id: cache-node-modules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-
-
-      - name: Build Packages
-        run: yarn build
-
-      - name: Install dev cli
-        run: sudo npm i -g medusa-dev-cli
-
-      - name: Set path to medusa repo
-        run: medusa-dev --set-path-to-repo `pwd`
-
-      - name: Force install
-        run: medusa-dev --force-install
-        working-directory: integration-tests/plugins
-
-      - name: Build plugin integration tests
-        run: yarn build
-        working-directory: integration-tests/plugins
-
-      - name: Run plugin integration tests
-        run: yarn test:integration:plugins --maxWorkers=50% --silent=false
-        env:
-          DB_PASSWORD: postgres
