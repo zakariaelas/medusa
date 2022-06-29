@@ -106,6 +106,9 @@ jobs:
     strategy:
       matrix:
         chunk: [0, 1]
+        tests_dir:
+          - integration-tests/api
+          - integrations-test/plugins
 
     steps:
       - name: Checkout
@@ -122,6 +125,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-
 
+      - name: Yarn install
+        run: yarn install --prefer-offline
+
       - name: Build Packages
         run: yarn build
 
@@ -131,27 +137,27 @@ jobs:
       - name: Set path to medusa repo
         run: medusa-dev --set-path-to-repo `pwd`
 
-      - name: Force install API
+      - name: Force install
         run: medusa-dev --force-install
-        working-directory: integration-tests/api
+        working-directory: ${{ matrix.tests_dir }}
 
       - name: Build integration tests
         run: yarn build
-        working-directory: integration-tests/api
+        working-directory: ${{ matrix.tests_dir }}
 
       - name: Set Chunks
         id: set-test-chunks
         run: echo "::set-output name=test-chunks::$(npx jest --listTests --json | jq -cM '[_nwise(length / 2 | ceil)]')"
-        working-directory: integration-tests/api
+        working-directory: ${{ matrix.tests_dir }}
 
       - name: Set Chunk IDs
         run: echo "::set-output name=test-chunk-ids::$(echo $CHUNKS | jq -cM 'to_entries | map(.key)')"
         env:
           CHUNKS: ${{ steps['set-test-chunks'].outputs['test-chunks'] }}
 
-      - name: Run API integration tests
+      - name: Run integration tests
         run: echo $CHUNKS | jq '.[${{ matrix.chunk }}] | .[] | @text' | xargs yarn test --maxWorkers=50%
-        working-directory: integration-tests/api
+        working-directory: ${{ matrix.tests_dir }}
         env:
           DB_PASSWORD: postgres
           CHUNKS: ${{ steps['set-test-chunks'].outputs['test-chunks'] }}
