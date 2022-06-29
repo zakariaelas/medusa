@@ -75,7 +75,6 @@ export const defaultAdminDraftOrdersCartFields: (keyof Cart)[] = [
   "discount_total",
   "gift_card_total",
   "total",
-  "customer",
 ]
 
 export const defaultAdminDraftOrdersFields: (keyof DraftOrder)[] = [
