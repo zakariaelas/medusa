@@ -42,7 +42,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Log node_modules
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        if: steps.yarn-cache.outputs.cache-hit == 'true'
         run: ls ./node_modules
 
       - name: Install project dependencies
