@@ -52,7 +52,7 @@ jobs:
 
       - name: Log node_modules
         if: steps.yarn-cache.outputs.cache-hit == 'true'
-        run: ls ./node_modules
+        run: ls
 
       - name: Install project dependencies
         run: yarn --prefer-offline --frozen-lockfile
