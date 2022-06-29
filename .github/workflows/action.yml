@@ -56,6 +56,7 @@ jobs:
 
   integration-tests-api:
     runs-on: ubuntu-latest
+    name: Integration tests (chunk ${{ matrix.chunk }})
 
     services:
       postgres:
