@@ -136,7 +136,7 @@ jobs:
         working-directory: integration-tests/api
         env:
           DB_PASSWORD: postgres
-          CHUNKS: ${{ needs.setup.outputs['test-chunks'] }}
+          CHUNKS: ${{ steps['set-test-chunks'].outputs['test-chunks'] }}
 
   integration-tests-plugins:
     runs-on: ubuntu-latest
