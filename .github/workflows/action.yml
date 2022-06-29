@@ -19,10 +19,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get Yarn cache path
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.1
         with:
@@ -32,13 +28,20 @@ jobs:
       - name: Assert changed
         run: ./scripts/assert-changed-files-actions.sh "packages"
 
+      - name: Get Yarn cache directory
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
       - name: Load Yarn cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+
+      - name: Install project dependencies
+        run: yarn --prefer-offline
 
       - name: Build Packages
         run: yarn build
@@ -80,10 +83,20 @@ jobs:
           node-version: "14"
           cache: "yarn"
 
-      - name: Bootstrap packages
-        uses: ./.github/actions/cache-bootstrap
+      - name: Get Yarn cache directory
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Load Yarn cache
+        uses: actions/cache@v3
         with:
-          extension: integration-tests
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install project dependencies
+        run: yarn --prefer-offline
 
       - name: Build Packages
         run: lerna run build
@@ -141,10 +154,20 @@ jobs:
           node-version: "14"
           cache: "yarn"
 
-      - name: Bootstrap packages
-        uses: ./.github/actions/cache-bootstrap
+      - name: Get Yarn cache directory
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Load Yarn cache
+        uses: actions/cache@v3
         with:
-          extension: integration-tests
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install project dependencies
+        run: yarn --prefer-offline
 
       - name: Build Packages
         run: lerna run build
