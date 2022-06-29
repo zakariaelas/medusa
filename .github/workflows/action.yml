@@ -167,6 +167,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      - name: Debug
+        run: echo "${{ steps.yarn-cache.outputs.cache-hit }}"
+
       - name: Install project dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --prefer-offline --frozen-lockfile
