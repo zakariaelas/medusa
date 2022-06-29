@@ -75,6 +75,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-
 
+      - name: Yarn install
+        run: yarn install --prefer-offline
+
       - name: Build Packages
         run: yarn build
 
